@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- TRIP_HEAD:START -->
+  <title>Rivera Family — Lisbon &amp; the Algarve 2026</title>
+  <meta name="description" content="Rivera Family Vacation to Lisbon &amp; the Algarve, Portugal - June 2026 Itinerary">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌊</text></svg>">
+  <!-- TRIP_HEAD:END -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- PASSWORD SCREEN -->
+  <div id="password-screen">
+    <div class="lock-icon">🔒</div>
+    <h1>Trip Itinerary</h1>
+    <p>Enter the password to view the trip</p>
+    <form id="password-form">
+      <input id="password-input" type="password" placeholder="Enter password" autocomplete="off" />
+      <div id="password-error">Incorrect password. Try again!</div>
+      <button id="password-submit" type="submit">Enter →</button>
+    </form>
+  </div>
+
+  <!-- MAIN SITE -->
+  <div id="main-site">
+    <header>
+      <div class="emoji-row" id="header-emoji-row"></div>
+      <h1 id="header-trip-name"></h1>
+      <p class="subtitle" id="header-group-name"></p>
+      <p class="header-dates" id="header-dates"></p>
+      <div class="header-meta" id="header-meta"></div>
+    </header>
+
+    <div class="countdown-bar" id="countdown">
+      <div class="countdown-unit"><div class="num" id="cd-days">--</div><div class="lbl">Days</div></div>
+      <div class="countdown-unit"><div class="num" id="cd-hours">--</div><div class="lbl">Hours</div></div>
+      <div class="countdown-unit"><div class="num" id="cd-mins">--</div><div class="lbl">Min</div></div>
+      <div class="countdown-unit"><div class="num" id="cd-secs">--</div><div class="lbl">Sec</div></div>
+    </div>
+
+    <nav id="main-nav"></nav>
+
+    <main>
+
+      <!-- JOURNEY OVERVIEW -->
+      <section class="journey-section" id="journey">
+        <h2>🗺️ The Journey</h2>
+        <p class="journey-subtitle">Tap a destination to see what's planned</p>
+        <div class="journey-flow" id="journey-flow"></div>
+      </section>
+
+      <!-- WEATHER -->
+      <div class="weather-note" id="weather-note" style="display:none">
+        <span class="weather-icon" id="weather-icon">🌤️</span>
+        <div class="weather-text" id="weather-text"></div>
+      </div>
+
+      <!-- ITINERARY PHASES (one per destination) -->
+      <div id="phases"></div>
+
+      <!-- MAP -->
+      <section id="map">
+        <h2>🗺️ Trip Route</h2>
+        <div id="trip-map"></div>
+      </section>
+
+      <div class="details-divider"><span>📂 Trip Details &amp; Bookings</span></div>
+
+      <!-- FLIGHTS -->
+      <section id="flights">
+        <h2>✈️ Flights</h2>
+        <div id="flights-list"></div>
+      </section>
+
+      <!-- RENTAL CAR -->
+      <section id="car">
+        <h2>🚗 Rental Car</h2>
+        <div id="car-block"></div>
+      </section>
+
+      <!-- ACCOMMODATION -->
+      <section id="accommodation">
+        <h2>🏡 Accommodations</h2>
+        <div id="lodging-list"></div>
+      </section>
+
+      <!-- ACTIVITIES -->
+      <section id="activities">
+        <h2>🎟️ Activities &amp; Tours</h2>
+        <div id="activities-list"></div>
+      </section>
+
+      <!-- TRAVELERS -->
+      <section id="travelers">
+        <h2>👨‍👩‍👧‍👦 Travelers &amp; Seats</h2>
+        <div class="travelers-grid" id="travelers-grid"></div>
+      </section>
+
+    </main>
+
+    <footer id="site-footer"></footer>
+  </div>
+
+  <script src="generated/site-config.js"></script>
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>

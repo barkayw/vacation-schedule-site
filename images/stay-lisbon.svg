@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="480" viewBox="0 0 720 480">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e0954a"/>
+      <stop offset="100%" stop-color="#b5502f"/>
+    </linearGradient>
+  </defs>
+  <rect width="720" height="480" fill="url(#g)"/>
+  <rect x="60" y="220" width="120" height="180" fill="#fff7ea" opacity="0.85"/>
+  <rect x="200" y="180" width="120" height="220" fill="#fff2df" opacity="0.9"/>
+  <rect x="340" y="240" width="120" height="160" fill="#fff7ea" opacity="0.8"/>
+  <rect x="480" y="200" width="120" height="200" fill="#fff2df" opacity="0.85"/>
+  <text x="50%" y="88%" text-anchor="middle" font-family="Georgia, serif" font-size="34" fill="#fff" opacity="0.9">Casa Alfama Loft — placeholder photo</text>
+</svg>

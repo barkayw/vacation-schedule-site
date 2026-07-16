@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="480" viewBox="0 0 720 480">
+  <defs>
+    <linearGradient id="g2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#3d9fc2"/>
+      <stop offset="60%" stop-color="#1c6e8c"/>
+      <stop offset="100%" stop-color="#e8d9a8"/>
+    </linearGradient>
+  </defs>
+  <rect width="720" height="480" fill="url(#g2)"/>
+  <circle cx="600" cy="90" r="40" fill="#fdf1d6" opacity="0.9"/>
+  <path d="M0 330 Q180 300 360 330 T720 320 V480 H0 Z" fill="#e8d9a8"/>
+  <text x="50%" y="90%" text-anchor="middle" font-family="Georgia, serif" font-size="30" fill="#0a3346" opacity="0.85">Vila Praia Suites — placeholder photo</text>
+</svg>

@@ -1,0 +1,337 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.com/schema/trip.schema.json",
+  "title": "Trip",
+  "description": "Single source of truth for a vacation-schedule-site trip. One JSON file describes one trip: who's going, where, when, the day-by-day itinerary, and every booking/confirmation.",
+  "type": "object",
+  "required": ["site", "meta", "destinations", "days", "travelers"],
+  "additionalProperties": false,
+  "properties": {
+    "site": {
+      "type": "object",
+      "description": "Browser tab / SEO / social-preview metadata.",
+      "required": ["title", "description"],
+      "additionalProperties": false,
+      "properties": {
+        "title": { "type": "string", "description": "e.g. \"Rivera Family — Lisbon & the Algarve 2026\"" },
+        "description": { "type": "string" },
+        "favicon": { "type": "string", "description": "A single emoji used as the favicon, e.g. \"🌊\"" },
+        "ogImage": { "type": "string", "description": "Path to a social-preview image, relative to site root. Optional." }
+      }
+    },
+    "meta": {
+      "type": "object",
+      "description": "Trip-level facts shown in the header and used for the countdown/nav.",
+      "required": ["tripName", "groupName", "startDate", "endDate", "homeBase", "currency"],
+      "additionalProperties": false,
+      "properties": {
+        "tripName": { "type": "string", "description": "e.g. \"Lisbon & the Algarve\"" },
+        "groupName": { "type": "string", "description": "e.g. \"Rivera Family\"" },
+        "emojiRow": { "type": "string", "description": "A few emoji shown under the header title, e.g. \"🌊 🏰 🍊 🚗\"" },
+        "startDate": { "type": "string", "format": "date" },
+        "endDate": { "type": "string", "format": "date" },
+        "homeBase": {
+          "type": "object",
+          "description": "Home airport, used for the first/last flight leg and 'Home' journey card.",
+          "required": ["code", "city"],
+          "additionalProperties": false,
+          "properties": {
+            "code": { "type": "string" },
+            "city": { "type": "string" }
+          }
+        },
+        "currency": { "type": "string", "description": "ISO 4217 currency code, e.g. \"USD\"" },
+        "countdownTarget": { "type": "string", "format": "date-time", "description": "ISO 8601 datetime the homepage countdown counts down to. Defaults to the first flight's departure if omitted." },
+        "theme": {
+          "type": "object",
+          "description": "Visual accents. All optional — sensible defaults are used if omitted.",
+          "additionalProperties": false,
+          "properties": {
+            "backgroundImage": { "type": "string", "description": "Path to the full-page background image, relative to site root." },
+            "primaryColor": { "type": "string", "description": "CSS color for header gradient / dark accents." },
+            "accentColor": { "type": "string", "description": "CSS color for highlights, buttons, countdown numerals." }
+          }
+        }
+      }
+    },
+    "destinations": {
+      "type": "array",
+      "description": "Each leg of the trip, in chronological order. Rendered as the horizontal 'Journey' cards and as collapsible itinerary phases.",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["id", "name", "arrivalDate", "departureDate"],
+        "additionalProperties": false,
+        "properties": {
+          "id": { "type": "string", "pattern": "^[a-z0-9-]+$", "description": "Slug used to link days/lodging to this destination, e.g. \"lisbon\"." },
+          "name": { "type": "string" },
+          "tagline": { "type": "string", "description": "Short flavor text shown after the name in the itinerary phase title, e.g. \"Sea Caves & Surf\" (rendered as \"Lagos, Algarve — Sea Caves & Surf\")." },
+          "emoji": { "type": "string" },
+          "arrivalDate": { "type": "string", "format": "date" },
+          "departureDate": { "type": "string", "format": "date" },
+          "lodgingId": { "type": "string", "description": "id of the entry in `lodging` for this leg, if any." },
+          "coordinates": {
+            "type": "object",
+            "description": "Used to plot this destination on the trip map. Omit to leave it off the map.",
+            "required": ["lat", "lng"],
+            "additionalProperties": false,
+            "properties": {
+              "lat": { "type": "number", "minimum": -90, "maximum": 90 },
+              "lng": { "type": "number", "minimum": -180, "maximum": 180 }
+            }
+          },
+          "mapDescription": { "type": "string", "description": "Short text shown in the map pin popup." },
+          "driveFromPrevious": {
+            "type": "object",
+            "description": "Drive connector shown between this and the previous journey card (the auto-generated Arrival card for the first destination, or the previous destination otherwise). Omit if this leg isn't a drive (e.g. a connecting flight).",
+            "additionalProperties": false,
+            "properties": {
+              "durationLabel": { "type": "string", "description": "e.g. \"2.5h\"" },
+              "icon": { "type": "string", "default": "🚗" }
+            }
+          }
+        }
+      }
+    },
+    "days": {
+      "type": "array",
+      "description": "Day-by-day itinerary, in order. Consecutive days with the same title/theme may be merged by the renderer's caller by simply omitting duplicate entries — the schema always models one entry per rendered day-block.",
+      "items": {
+        "type": "object",
+        "required": ["date", "destinationId", "title"],
+        "additionalProperties": false,
+        "properties": {
+          "date": { "type": "string", "format": "date" },
+          "dateLabel": { "type": "string", "description": "Override for the displayed date range, e.g. \"Friday – Saturday, Jun 21–22\" for a merged multi-day block." },
+          "dayNumber": { "type": "string", "description": "Free-form label, e.g. \"Day 1\" or \"Days 9–10\"." },
+          "destinationId": { "type": "string", "description": "Which destination's phase this day belongs to." },
+          "title": { "type": "string", "description": "e.g. \"Day 1 — Arrival\"" },
+          "theme": { "type": "string", "description": "One-line italic summary shown under the day title." },
+          "items": {
+            "type": "array",
+            "description": "Ordered list of events, drive segments, and venue cards making up this day.",
+            "items": { "$ref": "#/$defs/dayItem" }
+          },
+          "note": { "type": "string", "description": "Callout box shown at the end of the day block." }
+        }
+      }
+    },
+    "flights": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["direction", "date", "flightNumber", "from", "to"],
+        "additionalProperties": false,
+        "properties": {
+          "direction": { "type": "string", "enum": ["outbound", "return"] },
+          "date": { "type": "string", "format": "date" },
+          "airline": { "type": "string" },
+          "flightNumber": { "type": "string" },
+          "from": { "$ref": "#/$defs/airport" },
+          "to": { "$ref": "#/$defs/airport" },
+          "duration": { "type": "string" },
+          "nonstop": { "type": "boolean" },
+          "confirmation": { "type": "string" },
+          "class": { "type": "string" },
+          "cost": { "type": "string" },
+          "payment": { "type": "string" },
+          "bagInfo": {
+            "type": "array",
+            "items": { "$ref": "#/$defs/labelValue" }
+          }
+        }
+      }
+    },
+    "car": {
+      "description": "Rental car booking, if any.",
+      "oneOf": [
+        { "type": "null" },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "company": { "type": "string" },
+            "vehicle": { "type": "string" },
+            "confirmation": { "type": "string" },
+            "partnerRef": { "type": "string" },
+            "transmission": { "type": "string" },
+            "doorsSeats": { "type": "string" },
+            "pickUp": { "type": "string" },
+            "dropOff": { "type": "string" },
+            "duration": { "type": "string" },
+            "cost": { "type": "string" },
+            "deposit": { "type": "string" },
+            "pickupType": { "type": "string" },
+            "location": { "type": "string" },
+            "locationMapUrl": { "type": "string", "format": "uri" },
+            "address": { "type": "string" },
+            "addressMapUrl": { "type": "string", "format": "uri" },
+            "driver": { "type": "string" },
+            "contactLabel": { "type": "string" },
+            "contactPhone": { "type": "string" },
+            "flightNumber": { "type": "string" },
+            "notes": { "type": "array", "items": { "type": "string" } }
+          }
+        }
+      ]
+    },
+    "lodging": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "name", "checkIn", "checkOut"],
+        "additionalProperties": false,
+        "properties": {
+          "id": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+          "name": { "type": "string" },
+          "type": { "type": "string", "description": "e.g. \"Airbnb\", \"Hotel\", \"5-Star\"" },
+          "host": { "type": "string" },
+          "confirmation": { "type": "string" },
+          "phone": { "type": "string" },
+          "checkIn": { "type": "string" },
+          "checkOut": { "type": "string" },
+          "guests": { "type": "string" },
+          "nights": { "type": "integer", "minimum": 1 },
+          "cost": { "type": "string" },
+          "payment": { "type": "string" },
+          "address": { "type": "string" },
+          "addressMapUrl": { "type": "string", "format": "uri" },
+          "image": { "type": "string", "description": "Path to a listing photo, relative to site root." },
+          "bookingUrl": { "type": "string", "format": "uri" },
+          "notes": { "type": "array", "items": { "type": "string" } }
+        }
+      }
+    },
+    "activities": {
+      "type": "array",
+      "description": "Booked tours/activities, rendered both inline in the day itinerary (via a matching dayItem venue) and as a detail block in the Activities section.",
+      "items": {
+        "type": "object",
+        "required": ["id", "name"],
+        "additionalProperties": false,
+        "properties": {
+          "id": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+          "name": { "type": "string" },
+          "icon": { "type": "string" },
+          "status": { "type": "string", "default": "Confirmed" },
+          "confirmationLabel": { "type": "string", "default": "Confirmation #" },
+          "confirmation": { "type": "string" },
+          "date": { "type": "string" },
+          "startTime": { "type": "string" },
+          "duration": { "type": "string" },
+          "tickets": { "type": "string" },
+          "package": { "type": "string" },
+          "addOn": { "type": "string" },
+          "pricing": {
+            "type": "array",
+            "items": { "$ref": "#/$defs/labelValue" }
+          },
+          "bookedBy": { "type": "string" },
+          "notes": { "type": "array", "items": { "type": "string" } },
+          "portalUrl": { "type": "string", "format": "uri" },
+          "image": { "type": "string" }
+        }
+      }
+    },
+    "travelers": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["name"],
+        "additionalProperties": false,
+        "properties": {
+          "name": { "type": "string" },
+          "emoji": { "type": "string" },
+          "seats": {
+            "type": "object",
+            "description": "Optional per-flight seat assignments, keyed by flight direction.",
+            "additionalProperties": { "type": "string" }
+          }
+        }
+      }
+    },
+    "weather": {
+      "type": "object",
+      "description": "Single weather-expectations callout shown above the itinerary. Omit if not applicable.",
+      "additionalProperties": false,
+      "properties": {
+        "icon": { "type": "string", "default": "🌤️" },
+        "text": { "type": "string" }
+      }
+    }
+  },
+  "$defs": {
+    "labelValue": {
+      "type": "object",
+      "required": ["label", "value"],
+      "additionalProperties": false,
+      "properties": {
+        "label": { "type": "string" },
+        "value": { "type": "string" }
+      }
+    },
+    "airport": {
+      "type": "object",
+      "required": ["code", "city", "time"],
+      "additionalProperties": false,
+      "properties": {
+        "code": { "type": "string" },
+        "city": { "type": "string" },
+        "time": { "type": "string" }
+      }
+    },
+    "dayItem": {
+      "type": "object",
+      "required": ["type"],
+      "oneOf": [
+        {
+          "properties": {
+            "type": { "const": "event" },
+            "time": { "type": "string" },
+            "icon": { "type": "string" },
+            "text": { "type": "string" },
+            "link": { "$ref": "#/$defs/link" }
+          },
+          "required": ["type", "text"],
+          "additionalProperties": false
+        },
+        {
+          "properties": {
+            "type": { "const": "drive" },
+            "route": { "type": "string" },
+            "meta": { "type": "string" },
+            "duration": { "type": "string" }
+          },
+          "required": ["type", "route", "duration"],
+          "additionalProperties": false
+        },
+        {
+          "properties": {
+            "type": { "const": "venue" },
+            "icon": { "type": "string" },
+            "name": { "type": "string" },
+            "link": { "type": "string", "format": "uri" },
+            "mapLink": { "type": "string", "format": "uri" },
+            "time": { "type": "string" },
+            "desc": { "type": "string" },
+            "highlights": { "type": "array", "items": { "type": "string" } },
+            "activityId": { "type": "string", "description": "If set, links to a matching entry in top-level `activities` and shows its booked-badge inline." },
+            "altOptionOf": { "type": "string", "description": "If set, marks this venue as an alternate choice alongside the venue with this name." }
+          },
+          "required": ["type", "name"],
+          "additionalProperties": false
+        }
+      ]
+    },
+    "link": {
+      "type": "object",
+      "required": ["href", "text"],
+      "additionalProperties": false,
+      "properties": {
+        "href": { "type": "string" },
+        "text": { "type": "string" }
+      }
+    }
+  }
+}

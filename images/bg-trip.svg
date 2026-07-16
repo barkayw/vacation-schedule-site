@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0f3d5c"/>
+      <stop offset="55%" stop-color="#1c6e8c"/>
+      <stop offset="100%" stop-color="#e0954a"/>
+    </linearGradient>
+    <linearGradient id="sea" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#12506b"/>
+      <stop offset="100%" stop-color="#0a3346"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#sky)"/>
+  <rect y="620" width="1600" height="380" fill="url(#sea)"/>
+  <circle cx="1250" cy="230" r="90" fill="#fdf1d6" opacity="0.85"/>
+  <path d="M0 640 Q200 580 420 630 T840 620 T1260 640 T1600 610 V1000 H0 Z" fill="#0e4a63" opacity="0.6"/>
+</svg>
