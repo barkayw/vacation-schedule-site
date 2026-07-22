@@ -1,405 +1,326 @@
 {
   "site": {
-    "title": "Rivera Family — Lisbon & the Algarve 2026",
-    "description": "Rivera Family Vacation to Lisbon & the Algarve, Portugal - June 2026 Itinerary",
-    "favicon": "🌊"
+    "title": "90 Reasons to Celebrate — Costa Rica 2026",
+    "description": "Barkay & Shani Wolfsohn's Costa Rica trip — La Fortuna, the Caribbean coast & Tortuguero, September/October 2026",
+    "favicon": "🌴"
   },
   "meta": {
-    "tripName": "Lisbon & the Algarve",
-    "groupName": "Rivera Family",
-    "emojiRow": "🌊 🏰 🍮 🏄",
-    "startDate": "2026-06-10",
-    "endDate": "2026-06-17",
-    "homeBase": { "code": "JFK", "city": "New York, NY" },
+    "tripName": "Costa Rica",
+    "groupName": "90 Reasons to Celebrate",
+    "emojiRow": "🌋 🐢 🏝️ 🌴",
+    "startDate": "2026-09-19",
+    "endDate": "2026-10-02",
+    "homeBase": { "code": "EWR", "city": "Newark, NJ" },
     "currency": "USD",
-    "countdownTarget": "2026-06-10T08:15:00-04:00",
-    "theme": {
-      "backgroundImage": "images/bg-trip.svg"
-    }
-  },
-  "weather": {
-    "icon": "☀️",
-    "text": "June in Lisbon and the Algarve is dry season — mid-70s to low-80s°F, sunny with a light Atlantic breeze most afternoons. Evenings cool off, so bring a light layer for dinners outdoors."
+    "countdownTarget": "2026-09-19T08:24:00-04:00"
   },
   "destinations": [
     {
-      "id": "lisbon",
-      "name": "Lisbon",
-      "tagline": "Historic Center",
-      "emoji": "🏰",
-      "arrivalDate": "2026-06-10",
-      "departureDate": "2026-06-14",
-      "lodgingId": "lisbon",
-      "coordinates": { "lat": 38.7223, "lng": -9.1393 },
-      "mapDescription": "Jun 10–14 · Alfama, Belém & Sintra"
+      "id": "san-jose",
+      "name": "San José",
+      "tagline": "Arrival",
+      "emoji": "🏙️",
+      "arrivalDate": "2026-09-19",
+      "departureDate": "2026-09-20",
+      "lodgingId": "hampton-sjo",
+      "coordinates": { "lat": 9.9281, "lng": -84.0907 },
+      "mapDescription": "Sep 19–20 · Arrival"
     },
     {
-      "id": "algarve",
-      "name": "Lagos, Algarve",
-      "tagline": "Sea Caves & Surf",
-      "emoji": "🏖️",
-      "arrivalDate": "2026-06-14",
-      "departureDate": "2026-06-17",
-      "lodgingId": "algarve",
-      "coordinates": { "lat": 37.1020, "lng": -8.6742 },
-      "mapDescription": "Jun 14–17 · Sea Caves & Surf",
-      "driveFromPrevious": { "durationLabel": "3h", "icon": "🚗" }
+      "id": "la-fortuna",
+      "name": "La Fortuna",
+      "tagline": "Arenal Volcano",
+      "emoji": "🌋",
+      "arrivalDate": "2026-09-20",
+      "departureDate": "2026-09-24",
+      "lodgingId": "fortuna-retreat",
+      "coordinates": { "lat": 10.4708, "lng": -84.6413 },
+      "mapDescription": "Sep 20–24 · Arenal Volcano",
+      "driveFromPrevious": { "durationLabel": "~4h", "icon": "🚗" }
+    },
+    {
+      "id": "puerto-viejo",
+      "name": "Puerto Viejo",
+      "tagline": "Caribbean Coast",
+      "emoji": "🏝️",
+      "arrivalDate": "2026-09-24",
+      "departureDate": "2026-09-28",
+      "lodgingId": "cariblue",
+      "coordinates": { "lat": 9.6555, "lng": -82.7554 },
+      "mapDescription": "Sep 24–28 · Caribbean Coast",
+      "driveFromPrevious": { "durationLabel": "~5-6h", "icon": "🚗" }
+    },
+    {
+      "id": "tortuguero",
+      "name": "Tortuguero",
+      "tagline": "National Park",
+      "emoji": "🐢",
+      "arrivalDate": "2026-09-29",
+      "departureDate": "2026-10-01",
+      "lodgingId": "mawamba-lodge",
+      "coordinates": { "lat": 10.5433, "lng": -83.5040 },
+      "mapDescription": "Sep 29 – Oct 1 · Tortuguero National Park",
+      "driveFromPrevious": { "durationLabel": "~4h + boat", "icon": "🚤" }
+    },
+    {
+      "id": "san-jose-return",
+      "name": "San José",
+      "tagline": "Return & Departure",
+      "emoji": "🏙️",
+      "arrivalDate": "2026-10-01",
+      "departureDate": "2026-10-02",
+      "coordinates": { "lat": 9.9281, "lng": -84.0907 },
+      "mapDescription": "Oct 1–2 · Return & Flight Home",
+      "driveFromPrevious": { "durationLabel": "~4h + boat", "icon": "🚤" }
     }
   ],
   "days": [
     {
-      "date": "2026-06-10",
+      "date": "2026-09-19",
       "dayNumber": "Day 1",
-      "destinationId": "lisbon",
+      "destinationId": "san-jose",
       "title": "Day 1 — Arrival",
-      "theme": "Fly into Lisbon and settle into the Alfama in time for a rooftop sunset.",
+      "theme": "Land in San José and settle in for the night.",
       "items": [
-        { "type": "event", "time": "8:15 AM", "icon": "✈️", "text": "Depart New York (JFK) → Lisbon (LIS) · TP 203", "link": { "href": "#flights", "text": "TP 203" } },
-        { "type": "event", "time": "8:00 PM", "icon": "🛬", "text": "Arrive at Lisbon Humberto Delgado Airport (LIS)", "link": { "href": "https://maps.google.com/?q=Lisbon+Humberto+Delgado+Airport", "text": "LIS Airport" } },
-        { "type": "event", "time": "8:30 PM", "icon": "🚗", "text": "Pick up Fiat 500X at Europcar", "link": { "href": "#car", "text": "Europcar" } },
-        { "type": "drive", "route": "LIS Airport → Alfama", "meta": "10 km through central Lisbon, light evening traffic", "duration": "~20 min" },
-        { "type": "event", "time": "~9:00 PM", "icon": "🏡", "text": "Check into Casa Alfama Loft", "link": { "href": "#stay-lisbon", "text": "Casa Alfama Loft" } },
-        { "type": "event", "time": "Evening", "icon": "🍽️", "text": "Settle in, dinner at a nearby tasquinha" }
+        { "type": "event", "time": "8:24 AM", "icon": "✈️", "text": "Depart Newark (EWR) → San José (SJO) · UA 1080", "link": { "href": "#flights", "text": "UA 1080" } },
+        { "type": "event", "time": "11:38 AM", "icon": "🛬", "text": "Arrive San José (SJO)" },
+        { "type": "event", "time": "2:00 PM", "icon": "🏨", "text": "Check into Hampton by Hilton San José Airport", "link": { "href": "#accommodation", "text": "Hampton by Hilton" } }
       ],
-      "note": "💡 Arrival night — keep it low-key. The Alfama's alleys are steep and cobbled, pack light for the walk up."
+      "note": "💡 Stay close to SJO Airport to avoid city traffic."
     },
     {
-      "date": "2026-06-11",
+      "date": "2026-09-20",
       "dayNumber": "Day 2",
-      "destinationId": "lisbon",
-      "title": "Day 2 — Belém & the River",
-      "theme": "A UNESCO monastery, the original custard tart, and a ride on the iconic Tram 28.",
+      "destinationId": "la-fortuna",
+      "title": "Day 2 — Drive to La Fortuna",
+      "theme": "Head north from San José toward the Arenal Volcano area.",
       "items": [
-        { "type": "event", "time": "8:30 AM", "icon": "🚗", "text": "Depart Casa Alfama Loft", "link": { "href": "#stay-lisbon", "text": "Casa Alfama Loft" } },
-        { "type": "drive", "route": "Alfama → Belém", "meta": "Along the Tagus riverfront via Tram 15", "duration": "~25 min" },
-        {
-          "type": "venue", "icon": "🏛️", "name": "Jerónimos Monastery",
-          "link": "https://mosteirojeronimos.gov.pt/", "mapLink": "https://maps.google.com/?q=Jeronimos+Monastery+Lisbon",
-          "time": "9:15 – 11:00 AM",
-          "desc": "UNESCO-listed monastery marking the launch point of Portugal's Age of Discovery voyages.",
-          "highlights": ["Buy timed-entry tickets online to skip the queue", "The cloisters are the highlight — allow 45+ minutes"]
-        },
-        {
-          "type": "venue", "icon": "🥐", "name": "Pastéis de Belém",
-          "link": "https://pasteisdebelem.pt/", "mapLink": "https://maps.google.com/?q=Pasteis+de+Belem",
-          "time": "11:15 AM – 12:00 PM",
-          "desc": "The original pastel de nata bakery, baking since 1837. The line moves fast and most orders are takeaway.",
-          "highlights": ["Order at the counter for a table, or take away and eat riverside"]
-        },
-        { "type": "event", "time": "12:15 PM", "icon": "🗼", "text": "Walk to Belém Tower and the Discoveries Monument", "link": { "href": "https://maps.google.com/?q=Belem+Tower+Lisbon", "text": "Belém Tower" } },
-        { "type": "event", "time": "Afternoon", "icon": "🚋", "text": "Ride the iconic Tram 28 through Alfama and Graça" },
-        { "type": "event", "time": "Evening", "icon": "🍽️", "text": "Dinner in the Bairro Alto" }
+        { "type": "event", "time": "12:00 PM", "icon": "🚪", "text": "Check out of Hampton by Hilton San José Airport" },
+        { "type": "drive", "route": "San José → La Fortuna", "duration": "~4h" },
+        { "type": "event", "time": "3:00 PM", "icon": "🏡", "text": "Check into Fortuna Retreat", "link": { "href": "#accommodation", "text": "Fortuna Retreat" } }
       ],
-      "note": "💡 Belém is flat and stroller-friendly — a nice contrast to the Alfama's hills."
+      "note": "💡 4-hour drive. Leave early to avoid heavy afternoon rain."
     },
     {
-      "date": "2026-06-12",
+      "date": "2026-09-21",
       "dayNumber": "Day 3",
-      "destinationId": "lisbon",
-      "title": "Day 3 — Sintra Day Trip",
-      "theme": "Fairy-tale palaces and misty gardens in the hills above Lisbon.",
-      "items": [
-        { "type": "event", "time": "8:00 AM", "icon": "🚗", "text": "Depart Casa Alfama Loft", "link": { "href": "#stay-lisbon", "text": "Casa Alfama Loft" } },
-        { "type": "drive", "route": "Lisbon → Sintra", "meta": "Via the A16, forested hills replace city streets", "duration": "~35 min" },
-        {
-          "type": "venue", "icon": "🏰", "name": "Pena Palace & Sintra Historic Centre Tour",
-          "link": "https://parquesdesintra.pt/", "mapLink": "https://maps.google.com/?q=Pena+Palace+Sintra",
-          "time": "9:00 AM – 2:00 PM",
-          "desc": "A guided walk through the technicolor Pena Palace, followed by Sintra's historic centre.",
-          "activityId": "sintra-pena-palace"
-        },
-        { "type": "event", "time": "2:15 PM", "icon": "🍽️", "text": "Lunch in Sintra town" },
-        {
-          "type": "venue", "icon": "🌿", "name": "Quinta da Regaleira",
-          "link": "https://www.regaleira.pt/", "mapLink": "https://maps.google.com/?q=Quinta+da+Regaleira",
-          "time": "3:00 – 5:00 PM",
-          "desc": "Wander the mystical Initiation Well and grottoes of this Gothic Revival estate.",
-          "highlights": ["Bring a flashlight-friendly phone — the well's spiral staircase is dim"]
-        },
-        { "type": "drive", "route": "Sintra → Lisbon", "meta": "Return via the A16", "duration": "~35 min" },
-        { "type": "event", "time": "Evening", "icon": "🏡", "text": "Return to Casa Alfama Loft", "link": { "href": "#stay-lisbon", "text": "Casa Alfama Loft" } }
-      ],
-      "note": "💡 Sintra is a full day on its own — start early to beat the tour buses at Pena Palace."
+      "destinationId": "la-fortuna",
+      "title": "Day 3 — Explore the Arenal Area",
+      "theme": "Perfect for hikes, hot springs, or ziplines.",
+      "note": "💡 Nothing booked yet for this day — pick from hikes, hot springs, or ziplines once there."
     },
     {
-      "date": "2026-06-13",
+      "date": "2026-09-22",
       "dayNumber": "Day 4",
-      "destinationId": "lisbon",
-      "title": "Day 4 — Lisbon Free Day",
-      "theme": "Markets, street art, and a fado night in the Alfama.",
-      "items": [
-        { "type": "event", "time": "Morning", "icon": "🛍️", "text": "LX Factory — indie shops, murals, and coffee in a converted textile mill" },
-        { "type": "event", "time": "Midday", "icon": "🍴", "text": "Lunch at Time Out Market" },
-        { "type": "event", "time": "Afternoon", "icon": "🎨", "text": "Wander the Alfama's miradouros (viewpoints) at your own pace" },
-        {
-          "type": "venue", "icon": "🎻", "name": "Fado Dinner Show — A Baiuca",
-          "mapLink": "https://maps.google.com/?q=A+Baiuca+Alfama+Lisbon",
-          "time": "8:00 PM",
-          "desc": "Amateur fado singers perform between courses at this beloved Alfama tasquinha.",
-          "activityId": "fado-dinner"
-        }
-      ],
-      "note": "💡 Last night in Lisbon — pack tonight, the drive to the Algarve starts right after breakfast."
+      "destinationId": "la-fortuna",
+      "title": "Day 4 — Explore the Arenal Area",
+      "theme": "Hanging bridges or La Fortuna Waterfall.",
+      "note": "💡 Nothing booked yet — hanging bridges or La Fortuna Waterfall are both options."
     },
     {
-      "date": "2026-06-14",
+      "date": "2026-09-23",
       "dayNumber": "Day 5",
-      "destinationId": "algarve",
-      "title": "Day 5 — Road Trip to the Algarve",
-      "theme": "Trade Lisbon's hills for the Atlantic cliffs of the Algarve coast.",
-      "items": [
-        { "type": "event", "time": "9:30 AM", "icon": "🚗", "text": "Check out of Casa Alfama Loft, load the car", "link": { "href": "#stay-lisbon", "text": "Casa Alfama Loft" } },
-        { "type": "drive", "route": "Lisbon → Lagos", "meta": "~3 hours via the A2, rolling Alentejo countryside then coastal pines", "duration": "~3h" },
-        {
-          "type": "venue", "icon": "☕", "name": "Coffee stop in Grândola",
-          "mapLink": "https://maps.google.com/?q=Grandola+Portugal",
-          "time": "11:30 AM – 12:00 PM",
-          "desc": "Quick leg-stretch and espresso about halfway down."
-        },
-        { "type": "event", "time": "1:30 PM", "icon": "🏡", "text": "Check into Vila Praia Suites", "link": { "href": "#stay-algarve", "text": "Vila Praia Suites" } },
-        { "type": "event", "time": "Late afternoon", "icon": "🌅", "text": "Sunset walk at Ponta da Piedade", "link": { "href": "https://maps.google.com/?q=Ponta+da+Piedade+Lagos", "text": "Ponta da Piedade" } }
-      ],
-      "note": "💡 Long but scenic drive — the cliffs start appearing right as you reach Lagos."
+      "destinationId": "la-fortuna",
+      "title": "Day 5 — Last Day in La Fortuna",
+      "theme": "Final day for adventure tours before heading to the coast.",
+      "note": "💡 Nothing booked yet — last chance for any adventure tours in La Fortuna."
     },
     {
-      "date": "2026-06-15",
+      "date": "2026-09-24",
       "dayNumber": "Day 6",
-      "destinationId": "algarve",
-      "title": "Day 6 — Benagil Caves & Beach",
-      "theme": "Boat into the sea caves, then a slow afternoon on the sand.",
+      "destinationId": "puerto-viejo",
+      "title": "Day 6 — Drive to the Caribbean Coast",
+      "theme": "Transit day from Arenal to Puerto Viejo.",
       "items": [
-        { "type": "event", "time": "9:15 AM", "icon": "🚗", "text": "Depart Vila Praia Suites", "link": { "href": "#stay-algarve", "text": "Vila Praia Suites" } },
-        { "type": "drive", "route": "Lagos → Portimão Marina", "meta": "Short coastal drive east", "duration": "~25 min" },
-        {
-          "type": "venue", "icon": "⛵", "name": "Benagil Sea Cave Boat Tour",
-          "mapLink": "https://maps.google.com/?q=Portimao+Marina",
-          "time": "10:00 – 11:30 AM",
-          "desc": "Small-boat tour through the sea caves of the Algarve coastline, including the famous Benagil Cave.",
-          "activityId": "benagil-cave"
-        },
-        { "type": "event", "time": "12:00 PM", "icon": "🍽️", "text": "Lunch in Portimão" },
-        { "type": "drive", "route": "Portimão → Praia Dona Ana", "meta": "Back toward Lagos", "duration": "~25 min" },
-        { "type": "event", "time": "Afternoon", "icon": "🏖️", "text": "Beach afternoon at Praia Dona Ana", "link": { "href": "https://maps.google.com/?q=Praia+Dona+Ana+Lagos", "text": "Praia Dona Ana" } }
+        { "type": "event", "time": "11:00 AM", "icon": "🚪", "text": "Check out of Fortuna Retreat" },
+        { "type": "drive", "route": "La Fortuna → Puerto Viejo", "duration": "~5-6h" },
+        { "type": "event", "time": "3:00 PM", "icon": "🏡", "text": "Check into Cariblue Beach and Jungle Resort", "link": { "href": "#accommodation", "text": "Cariblue" } }
       ],
-      "note": "💡 The boat tour runs rain or shine — bring a change of clothes just in case."
+      "note": "💡 5–6 hours transit. Monitor Route 32 via Waze."
     },
     {
-      "date": "2026-06-16",
+      "date": "2026-09-25",
       "dayNumber": "Day 7",
-      "destinationId": "algarve",
-      "title": "Day 7 — Surf & Old Town",
-      "theme": "First waves for the kids, then wandering Lagos' cobblestone old town.",
-      "items": [
-        {
-          "type": "venue", "icon": "🏄", "name": "Beginner Surf Lesson — Praia do Camilo",
-          "mapLink": "https://maps.google.com/?q=Praia+do+Camilo+Lagos",
-          "time": "9:00 – 11:00 AM",
-          "desc": "A gentle beach break, perfect for a first lesson.",
-          "activityId": "surf-lesson"
-        },
-        { "type": "event", "time": "11:30 AM", "icon": "🍽️", "text": "Post-surf lunch by the beach" },
-        { "type": "event", "time": "Afternoon", "icon": "🚶", "text": "Explore Lagos' old town walls and Praça Gil Eanes" },
-        { "type": "event", "time": "Evening", "icon": "🍽️", "text": "Last Algarve dinner — grilled fish on the marina" }
-      ],
-      "note": "💡 Sunscreen even on cloudy days — the Atlantic glare is deceptive."
+      "destinationId": "puerto-viejo",
+      "title": "Day 7 — Caribbean Coast",
+      "theme": "Rent bikes, visit town, or hit Cocles beach.",
+      "note": "💡 Nothing booked yet — bikes, town, or Cocles beach are all options."
     },
     {
-      "date": "2026-06-17",
+      "date": "2026-09-26",
       "dayNumber": "Day 8",
-      "destinationId": "algarve",
-      "title": "Day 8 — Departure",
-      "theme": "One more coastal view, then the drive to Faro for the flight home.",
+      "destinationId": "puerto-viejo",
+      "title": "Day 8 — Caribbean Coast",
+      "theme": "Day trip to Cahuita National Park for hiking/wildlife.",
+      "note": "💡 Nothing booked yet — Cahuita National Park is the leading option."
+    },
+    {
+      "date": "2026-09-27",
+      "dayNumber": "Day 9",
+      "destinationId": "puerto-viejo",
+      "title": "Day 9 — Caribbean Coast",
+      "theme": "Visit Manzanillo Refuge or relax by the beach.",
+      "note": "💡 Nothing booked yet — Manzanillo Refuge or beach time."
+    },
+    {
+      "date": "2026-09-28",
+      "dayNumber": "Day 10",
+      "destinationId": "puerto-viejo",
+      "title": "Day 10 — Travel Toward Tortuguero",
+      "theme": "Group drives to La Pavona; Yoav splits off toward San José.",
       "items": [
-        { "type": "event", "time": "9:00 AM", "icon": "🚗", "text": "Check out of Vila Praia Suites", "link": { "href": "#stay-algarve", "text": "Vila Praia Suites" } },
-        { "type": "drive", "route": "Lagos → Faro Airport", "meta": "Along the EN125 coastal road", "duration": "~1h" },
-        { "type": "event", "time": "10:00 AM", "icon": "🚙", "text": "Return Fiat 500X at Europcar Faro", "link": { "href": "#car", "text": "Europcar" } },
-        { "type": "event", "time": "1:15 PM", "icon": "✈️", "text": "Depart Faro (FAO) → New York (JFK) · TP 1990 / TP 202", "link": { "href": "#flights", "text": "TP 202" } },
-        { "type": "event", "time": "9:40 PM", "icon": "🛬", "text": "Arrive New York (JFK) 🏠" }
+        { "type": "event", "time": "7:00 AM", "icon": "🚪", "text": "Check out of Cariblue Beach and Jungle Resort" },
+        { "type": "drive", "route": "Puerto Viejo → La Pavona", "duration": "~3.5-4.5h" }
       ],
-      "note": "💡 Build in buffer for the coastal drive — the EN125 gets busy with beach traffic in summer."
+      "note": "💡 TODO: no lodging is booked for the night of Sep 28 — Mawamba Lodge check-in isn't until Tue Sep 29 at 12:30 PM, so there's an unaccounted night near La Pavona/Guápiles that still needs a place to stay. Group: drive to La Pavona (3.5–4.5h), park the car, take the boat over. Yoav: 6:00 AM shuttle from Puerto Viejo direct to SJO Airport, arriving before 4:00 PM — TODO confirm who Yoav is and their travel details; not on the United confirmation we have."
+    },
+    {
+      "date": "2026-09-29",
+      "dayNumber": "Day 11",
+      "destinationId": "tortuguero",
+      "title": "Day 11 — Boat to Tortuguero",
+      "theme": "Boat in to Tortuguero and check into Mawamba Lodge.",
+      "items": [
+        { "type": "event", "time": "12:30 PM", "icon": "🛶", "text": "Check into Mawamba Lodge (boat or plane access only)", "link": { "href": "#accommodation", "text": "Mawamba Lodge" } }
+      ],
+      "note": "💡 No public or private boats leave La Pavona dock after 4:00 PM — call the lodge before starting transit. Reception is closed 8:00 PM–5:30 AM."
+    },
+    {
+      "date": "2026-09-30",
+      "dayNumber": "Day 12",
+      "destinationId": "tortuguero",
+      "title": "Day 12 — Tortuguero National Park",
+      "theme": "Full day for a morning canoe canal tour and wildlife spotting.",
+      "note": "💡 Nothing booked yet — plan is a morning canoe canal tour."
+    },
+    {
+      "date": "2026-10-01",
+      "dayNumber": "Day 13",
+      "destinationId": "san-jose-return",
+      "title": "Day 13 — Return to the Capital",
+      "theme": "Boat and drive back to San José ahead of the flight home.",
+      "items": [
+        { "type": "event", "time": "5:30 AM", "icon": "🚪", "text": "Check out of Mawamba Lodge" }
+      ],
+      "note": "💡 TODO: no lodging is booked for the night of Oct 1 in San José, ahead of the next day's flight. Take the early morning boat out of Tortuguero, pick up the car at La Pavona, and drive back via Route 32 before sunset."
+    },
+    {
+      "date": "2026-10-02",
+      "dayNumber": "Day 14",
+      "destinationId": "san-jose-return",
+      "title": "Day 14 — Departure",
+      "items": [
+        { "type": "event", "time": "12:44 PM", "icon": "✈️", "text": "Depart San José (SJO) → Newark (EWR) · UA 1560", "link": { "href": "#flights", "text": "UA 1560" } },
+        { "type": "event", "time": "8:00 PM", "icon": "🛬", "text": "Arrive Newark (EWR) 🏠" }
+      ],
+      "note": "💡 Flight at 12:00 PM — head straight to the airport and arrive by 9:00 AM."
     }
   ],
   "flights": [
     {
       "direction": "outbound",
-      "date": "2026-06-10",
-      "airline": "TAP Air Portugal",
-      "flightNumber": "TP 203",
-      "from": { "code": "JFK", "city": "New York, NY", "time": "8:15 AM" },
-      "to": { "code": "LIS", "city": "Lisbon, Portugal", "time": "8:00 PM" },
-      "duration": "7h 45m",
+      "date": "2026-09-19",
+      "airline": "United Airlines",
+      "flightNumber": "UA 1080",
+      "from": { "code": "EWR", "city": "Newark, NJ", "time": "8:24 AM" },
+      "to": { "code": "SJO", "city": "San José, CR", "time": "11:38 AM" },
+      "duration": "5h 14m",
       "nonstop": true,
-      "confirmation": "Q7XPLK",
-      "class": "TAP Economy",
-      "bagInfo": [
-        { "label": "1st Bag", "value": "Free (Portugal Airlines Card)" },
-        { "label": "2nd Bag", "value": "$75 per bag" }
-      ]
+      "confirmation": "IGHJDR",
+      "class": "United Economy (XN)"
     },
     {
       "direction": "return",
-      "date": "2026-06-17",
-      "airline": "TAP Air Portugal",
-      "flightNumber": "TP 1990 / TP 202",
-      "from": { "code": "FAO", "city": "Faro, Portugal", "time": "1:15 PM" },
-      "to": { "code": "JFK", "city": "New York, NY", "time": "9:40 PM" },
-      "duration": "13h 25m (1 stop in Lisbon)",
-      "nonstop": false,
-      "confirmation": "Q7XPLK",
-      "class": "TAP Economy",
-      "cost": "$3,412.60 (4 pax)",
-      "payment": "Visa ending 4471"
+      "date": "2026-10-02",
+      "airline": "United Airlines",
+      "flightNumber": "UA 1560",
+      "from": { "code": "SJO", "city": "San José, CR", "time": "12:44 PM" },
+      "to": { "code": "EWR", "city": "Newark, NJ", "time": "8:00 PM" },
+      "duration": "5h 16m",
+      "nonstop": true,
+      "confirmation": "IGHJDR",
+      "class": "United Economy (XN)"
     }
   ],
-  "car": {
-    "company": "Europcar",
-    "vehicle": "Fiat 500X (or similar)",
-    "confirmation": "EC-4471209",
-    "partnerRef": "RC-88213",
-    "transmission": "Automatic",
-    "doorsSeats": "4 doors · 5 seats",
-    "pickUp": "Wed, Jun 10 · 11:00 PM",
-    "dropOff": "Wed, Jun 17 · 10:00 AM",
-    "duration": "7 days",
-    "cost": "€412 + insurance",
-    "deposit": "€800.00 hold",
-    "pickupType": "On Airport",
-    "location": "Lisbon Humberto Delgado Airport (LIS)",
-    "locationMapUrl": "https://maps.google.com/?q=Lisbon+Humberto+Delgado+Airport",
-    "address": "Alameda das Comunidades Portuguesas, 1700 Lisboa, Portugal",
-    "addressMapUrl": "https://maps.google.com/?q=Alameda+das+Comunidades+Portuguesas+Lisboa",
-    "driver": "Marco Rivera",
-    "contactLabel": "Europcar Portugal",
-    "contactPhone": "+351 218 435 120",
-    "flightNumber": "TP203",
-    "notes": [
-      "One-way rental — drop off is in Faro, not Lisbon.",
-      "Bring physical credit card, driver's license, and passport for pickup."
-    ]
-  },
   "lodging": [
     {
-      "id": "lisbon",
-      "name": "Casa Alfama Loft",
-      "type": "Airbnb",
-      "host": "Beatriz Oliveira",
-      "confirmation": "HMX92QARLB",
-      "phone": "+351 912 345 678",
-      "checkIn": "Wed, Jun 10 · 3:00 PM",
-      "checkOut": "Sun, Jun 14 · 11:00 AM",
-      "guests": "4 guests",
+      "id": "hampton-sjo",
+      "name": "Hampton by Hilton San José Airport",
+      "type": "Hotel",
+      "confirmation": "90849024",
+      "phone": "+506 2436 0000",
+      "checkIn": "Sat, Sep 19 · 2:00 PM",
+      "checkOut": "Sun, Sep 20 · 12:00 PM",
+      "guests": "2 Adults",
+      "nights": 1,
+      "cost": "$154.90 (incl. tax)",
+      "address": "Hwy 1 Airport Blvd, Alajuela, Costa Rica",
+      "notes": [
+        "Booked under Shani Wolfsohn's Hilton Honors account — 1 King Bed Nonsmoking.",
+        "Free cancellation until 11:59 PM Sep 18, 2026 — after that, first night's room + tax is charged."
+      ]
+    },
+    {
+      "id": "fortuna-retreat",
+      "name": "Fortuna Retreat",
+      "type": "Hotel",
+      "confirmation": "6720916715",
+      "phone": "+506 8401 6666",
+      "checkIn": "Sun, Sep 20 · 3:00–6:00 PM",
+      "checkOut": "Thu, Sep 24 · 11:00 AM",
+      "guests": "Booked by Shani Wolfsohn · 3 rooms",
       "nights": 4,
-      "cost": "€1,180.00",
-      "payment": "Visa ending 4471 · Jun 1",
-      "address": "Alfama, Lisbon, Portugal",
-      "image": "images/stay-lisbon.svg",
-      "bookingUrl": "https://www.airbnb.com/rooms/00000001",
+      "cost": "$2,653.70 (incl. 13% VAT)",
+      "payment": "Card ending 0741",
+      "address": "La Fortuna, Fortuna, Costa Rica",
       "notes": [
-        "Steep cobblestone alley — pack light for the walk up.",
-        "Rooftop terrace with a river view. Cancel free before Jun 3."
+        "PIN 0147 — keep private, it can modify/cancel the booking.",
+        "3 rooms: Double Room with Garden View ($804.90), Suite with Private Pool ($1,079.90), Double Room with Garden View ($768.90).",
+        "Breakfast included in all rooms.",
+        "Free cancellation until Sep 12, 2026 11:59 PM."
       ]
     },
     {
-      "id": "algarve",
-      "name": "Vila Praia Suites",
-      "type": "Airbnb",
-      "host": "Tomás Ferreira",
-      "confirmation": "HMX7KDNQPZ",
-      "phone": "+351 963 210 987",
-      "checkIn": "Sun, Jun 14 · 4:00 PM",
-      "checkOut": "Wed, Jun 17 · 10:00 AM",
-      "guests": "4 guests",
-      "nights": 3,
-      "cost": "€960.00",
-      "payment": "Visa ending 4471 · Jun 1",
-      "address": "Lagos, Algarve, Portugal",
-      "image": "images/stay-algarve.svg",
-      "bookingUrl": "https://www.airbnb.com/rooms/00000002",
+      "id": "cariblue",
+      "name": "Cariblue Beach and Jungle Resort",
+      "type": "Resort",
+      "confirmation": "6567105960",
+      "phone": "+506 2750 0035",
+      "checkIn": "Thu, Sep 24 · 3:00–10:00 PM",
+      "checkOut": "Mon, Sep 28 · by 12:00 PM",
+      "guests": "5 Adults · 3 rooms",
+      "nights": 4,
+      "cost": "$2,484.26 (incl. VAT)",
+      "address": "Playa Cocles, 1.5 km south of Puerto Viejo, Costa Rica",
       "notes": [
-        "2 bedrooms, shared pool, 5-minute walk to Praia Dona Ana.",
-        "No pets · No parties. Cancel free before Jun 7."
-      ]
-    }
-  ],
-  "activities": [
-    {
-      "id": "sintra-pena-palace",
-      "name": "Pena Palace & Sintra Historic Centre Tour",
-      "icon": "🏰",
-      "status": "Confirmed",
-      "confirmation": "SNT-88213",
-      "date": "Friday, Jun 12, 2026",
-      "startTime": "9:00 AM",
-      "duration": "5 hours",
-      "tickets": "4x Adult",
-      "package": "Guided Small-Group Tour",
-      "pricing": [
-        { "label": "Listed Price", "value": "€260.00" },
-        { "label": "Taxes & Fees", "value": "€18.20" },
-        { "label": "Total", "value": "€278.20" }
-      ],
-      "bookedBy": "Marco Rivera",
-      "notes": [
-        "Arrive 15 min early at the Sintra train station meeting point.",
-        "Wear comfortable walking shoes — palace grounds involve stairs and gravel paths."
-      ],
-      "portalUrl": "https://example-tours.test/bookings/SNT-88213"
-    },
-    {
-      "id": "fado-dinner",
-      "name": "Fado Dinner Show — A Baiuca",
-      "icon": "🎻",
-      "status": "Confirmed",
-      "confirmation": "FD-30291",
-      "date": "Saturday, Jun 13, 2026",
-      "startTime": "8:00 PM",
-      "tickets": "4x Adult",
-      "pricing": [{ "label": "Total", "value": "€196.00" }],
-      "bookedBy": "Marco Rivera",
-      "notes": [
-        "Traditional Alfama tasquinha — amateur fado singers perform between courses.",
-        "Cash only for extra drinks."
+        "PIN 2495 — keep private, it can modify/cancel the booking.",
+        "3 rooms: King Bungalow with Jungle View ($862.56), King Room with Garden View ($687.39), King Room with Garden View ($648.51).",
+        "Breakfast included in all rooms.",
+        "Free cancellation until Sep 21, 2026 11:59 PM (2 days before arrival)."
       ]
     },
     {
-      "id": "benagil-cave",
-      "name": "Benagil Sea Cave Boat Tour",
-      "icon": "⛵",
-      "status": "Confirmed",
-      "confirmation": "BC-77410",
-      "date": "Monday, Jun 15, 2026",
-      "startTime": "10:00 AM",
-      "duration": "1.5 hours",
-      "tickets": "4x Adult",
-      "pricing": [{ "label": "Total", "value": "€140.00" }],
-      "bookedBy": "Sofia Rivera",
+      "id": "mawamba-lodge",
+      "name": "Mawamba Lodge",
+      "type": "Lodge",
+      "confirmation": "6382491378",
+      "phone": "+506 8978 9844",
+      "checkIn": "Tue, Sep 29 · 12:30–8:00 PM",
+      "checkOut": "Thu, Oct 1 · 5:30–11:00 AM",
+      "guests": "4 Adults · 2 bungalows",
+      "nights": 2,
+      "cost": "$1,252.13 (incl. VAT)",
+      "address": "Canales de Tortuguero, Limón, Costa Rica",
       "notes": [
-        "Meet at Portimão Marina, Dock 3.",
-        "Bring swimwear — some tours include a swim stop inside the cave."
-      ]
-    },
-    {
-      "id": "surf-lesson",
-      "name": "Beginner Surf Lesson — Praia do Camilo",
-      "icon": "🏄",
-      "status": "Confirmed",
-      "confirmation": "SL-10457",
-      "date": "Tuesday, Jun 16, 2026",
-      "startTime": "9:00 AM",
-      "duration": "2 hours",
-      "tickets": "2x Adult + 2x Youth",
-      "pricing": [{ "label": "Total", "value": "€180.00" }],
-      "bookedBy": "Sofia Rivera",
-      "notes": [
-        "Wetsuits and boards included.",
-        "Meet at the surf school van in the Praia do Camilo parking lot."
+        "PIN 8807 — keep private, it can modify/cancel the booking.",
+        "Access is by boat or plane only. Lodge offers boat transfers from La Pavona/Guápiles dock for an extra cost — no boats depart La Pavona after 4:00 PM.",
+        "Reception closed 8:00 PM–5:30 AM; check-in not possible outside those hours.",
+        "Free cancellation until Sep 21, 2026 11:59 PM (7 days before arrival)."
       ]
     }
   ],
   "travelers": [
-    { "name": "Marco Rivera", "emoji": "🧔", "seats": { "outbound": "14C", "return": "22A" } },
-    { "name": "Sofia Rivera", "emoji": "👩", "seats": { "outbound": "14B", "return": "22B" } },
-    { "name": "Diego Rivera", "emoji": "👦", "seats": { "outbound": "14A", "return": "22C" } },
-    { "name": "Mia Rivera", "emoji": "👧", "seats": { "outbound": "15A", "return": "23A" } }
+    { "name": "Barkay Wolfsohn", "seats": { "outbound": "22F", "return": "22F" } },
+    { "name": "Shani Wolfsohn", "seats": { "outbound": "22D", "return": "22D" } }
   ]
 }
