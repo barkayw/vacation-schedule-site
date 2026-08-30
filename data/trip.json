@@ -245,6 +245,38 @@
     {
       "direction": "outbound",
       "date": "2026-09-19",
+      "airline": "United Airlines",
+      "flightNumber": "UA 1080",
+      "from": { "code": "EWR", "city": "Newark, NJ", "time": "8:24 AM" },
+      "to": { "code": "SJO", "city": "San José, CR", "time": "11:38 AM" },
+      "nonstop": true,
+      "confirmation": "JG51G5",
+      "class": "United Economy (K)",
+      "cost": "$1,012.78 total for Yaniv Raz & Maya Raz, round trip",
+      "payment": "Master Card ending in 4627",
+      "bagInfo": [
+        { "label": "1st Bag", "value": "$50.00" },
+        { "label": "2nd Bag", "value": "$60.00" }
+      ]
+    },
+    {
+      "direction": "return",
+      "date": "2026-10-02",
+      "airline": "United Airlines",
+      "flightNumber": "UA 1560",
+      "from": { "code": "SJO", "city": "San José, CR", "time": "12:44 PM" },
+      "to": { "code": "EWR", "city": "Newark, NJ", "time": "8:01 PM" },
+      "nonstop": true,
+      "confirmation": "JG51G5",
+      "class": "United Economy (G)",
+      "bagInfo": [
+        { "label": "1st Bag", "value": "$50.00" },
+        { "label": "2nd Bag", "value": "$60.00" }
+      ]
+    },
+    {
+      "direction": "outbound",
+      "date": "2026-09-19",
       "airline": "Lufthansa",
       "flightNumber": "LH 518",
       "from": { "code": "FRA", "city": "Frankfurt, Germany", "time": "1:35 PM" },
@@ -343,6 +375,8 @@
   "travelers": [
     { "name": "Barkay Wolfsohn", "seats": { "outbound": "22F", "return": "22F" } },
     { "name": "Shani Wolfsohn", "seats": { "outbound": "22D", "return": "22D" } },
-    { "name": "Yoav" }
+    { "name": "Yoav" },
+    { "name": "Yaniv Raz", "seats": { "outbound": "29A", "return": "30A" } },
+    { "name": "Maya Raz", "seats": { "outbound": "29C", "return": "30C" } }
   ]
 }
