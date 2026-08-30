@@ -107,24 +107,24 @@
       "dayNumber": "Day 3",
       "destinationId": "la-fortuna",
       "title": "Day 3 — Explore the Arenal Area",
-      "theme": "Perfect for hikes, hot springs, or ziplines.",
-      "note": "💡 Nothing booked yet for this day — pick from hikes, hot springs, or ziplines once there."
+      "theme": "La Fortuna Waterfall in the morning, Arenal lava fields in the afternoon.",
+      "note": "💡 Nothing booked yet — plan: La Fortuna Waterfall (morning), Arenal Volcano National Park lava fields (afternoon)."
     },
     {
       "date": "2026-09-22",
       "dayNumber": "Day 4",
       "destinationId": "la-fortuna",
       "title": "Day 4 — Explore the Arenal Area",
-      "theme": "Hanging bridges or La Fortuna Waterfall.",
-      "note": "💡 Nothing booked yet — hanging bridges or La Fortuna Waterfall are both options."
+      "theme": "Mistico Hanging Bridges in the morning, hot springs in the afternoon.",
+      "note": "💡 Nothing booked yet — plan: Mistico Arenal Hanging Bridges Park (2–3h, morning), hot springs (afternoon)."
     },
     {
       "date": "2026-09-23",
       "dayNumber": "Day 5",
       "destinationId": "la-fortuna",
       "title": "Day 5 — Last Day in La Fortuna",
-      "theme": "Final day for adventure tours before heading to the coast.",
-      "note": "💡 Nothing booked yet — last chance for any adventure tours in La Fortuna."
+      "theme": "Ziplining/canyoning in the morning, a night tour to close out La Fortuna.",
+      "note": "💡 Nothing booked yet — plan: ziplining and waterfall rappelling (canyoning) adventure (morning), night tour or floating night tour (evening)."
     },
     {
       "date": "2026-09-24",
@@ -137,31 +137,31 @@
         { "type": "drive", "route": "La Fortuna → Puerto Viejo", "duration": "~5-6h" },
         { "type": "event", "time": "3:00 PM", "icon": "🏡", "text": "Check into Cariblue Beach and Jungle Resort", "link": { "href": "#accommodation", "text": "Cariblue" } }
       ],
-      "note": "💡 5–6 hours transit. Monitor Route 32 via Waze."
+      "note": "💡 5–6 hours transit. Monitor Route 32 via Waze. Evening in Puerto Viejo — dinner at Koki Beach Restaurant."
     },
     {
       "date": "2026-09-25",
       "dayNumber": "Day 7",
       "destinationId": "puerto-viejo",
       "title": "Day 7 — Caribbean Coast",
-      "theme": "Rent bikes, visit town, or hit Cocles beach.",
-      "note": "💡 Nothing booked yet — bikes, town, or Cocles beach are all options."
+      "theme": "Cahuita National Park in the morning, Playa Blanca in the afternoon.",
+      "note": "💡 Nothing booked yet — plan: Cahuita National Park coastal trail (~5mi/8km, morning), relax at Playa Blanca (afternoon)."
     },
     {
       "date": "2026-09-26",
       "dayNumber": "Day 8",
       "destinationId": "puerto-viejo",
       "title": "Day 8 — Caribbean Coast",
-      "theme": "Day trip to Cahuita National Park for hiking/wildlife.",
-      "note": "💡 Nothing booked yet — Cahuita National Park is the leading option."
+      "theme": "Coffee & chocolate tour in the morning, Punta Uva in the afternoon.",
+      "note": "💡 Nothing booked yet — plan: Coffee & Chocolate Tour (optional Bribri Indigenous chocolate/cacao experience, morning), relax at Punta Uva (afternoon)."
     },
     {
       "date": "2026-09-27",
       "dayNumber": "Day 9",
       "destinationId": "puerto-viejo",
       "title": "Day 9 — Caribbean Coast",
-      "theme": "Visit Manzanillo Refuge or relax by the beach.",
-      "note": "💡 Nothing booked yet — Manzanillo Refuge or beach time."
+      "theme": "Beach-hopping to Punta Uva and Manzanillo, plus the wildlife refuge.",
+      "note": "💡 Nothing booked yet — plan: beach-hopping to Punta Uva and Manzanillo, Manzanillo Wildlife Refuge."
     },
     {
       "date": "2026-09-28",
@@ -173,7 +173,7 @@
         { "type": "event", "time": "7:00 AM", "icon": "🚪", "text": "Check out of Cariblue Beach and Jungle Resort" },
         { "type": "drive", "route": "Puerto Viejo → La Pavona", "duration": "~3.5-4.5h" }
       ],
-      "note": "💡 TODO: no lodging is booked for the night of Sep 28 — Mawamba Lodge check-in isn't until Tue Sep 29 at 12:30 PM, so there's an unaccounted night near La Pavona/Guápiles that still needs a place to stay. Group: drive to La Pavona (3.5–4.5h), park the car, take the boat over. Yoav: 6:00 AM shuttle from Puerto Viejo direct to SJO Airport, arriving before 4:00 PM, then flies home via Frankfurt the next evening (Lufthansa LH 519, confirmation Y8NN9R) — TODO: no lodging is booked yet for Yoav's night in San José (Sep 28–29) before that flight."
+      "note": "💡 TODO: no lodging is booked for the night of Sep 28 — Mawamba Lodge check-in isn't until Tue Sep 29 at 12:30 PM, so there's an unaccounted night near La Pavona/Guápiles that still needs a place to stay. Group: drive to La Pavona (3.5–4.5h), park the car, take the boat over. Optional: Jaguar Rescue Center — but the 7:00 AM departure may not leave time; confirm before counting on it. Yoav: 6:00 AM shuttle from Puerto Viejo direct to SJO Airport (book at caribeshuttle.com/puerto-viejo-cahuita-to-san-jose), arriving before 4:00 PM, then flies home via Frankfurt the next evening (Lufthansa LH 519, confirmation Y8NN9R) — TODO: no lodging is booked yet for Yoav's night in San José (Sep 28–29) before that flight."
     },
     {
       "date": "2026-09-29",
