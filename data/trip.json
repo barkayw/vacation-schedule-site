@@ -84,7 +84,8 @@
       "items": [
         { "type": "event", "time": "8:24 AM", "icon": "✈️", "text": "Depart Newark (EWR) → San José (SJO) · UA 1080", "link": { "href": "#flights", "text": "UA 1080" } },
         { "type": "event", "time": "11:38 AM", "icon": "🛬", "text": "Arrive San José (SJO)" },
-        { "type": "event", "time": "2:00 PM", "icon": "🏨", "text": "Check into Hampton by Hilton San José Airport", "link": { "href": "#accommodation", "text": "Hampton by Hilton" } }
+        { "type": "event", "time": "2:00 PM", "icon": "🏨", "text": "Check into Hampton by Hilton San José Airport", "link": { "href": "#accommodation", "text": "Hampton by Hilton" } },
+        { "type": "event", "time": "5:35 PM", "icon": "✈️", "text": "Yoav arrives separately: Frankfurt (FRA) → San José (SJO) · LH 518", "link": { "href": "#flights", "text": "LH 518" } }
       ],
       "note": "💡 Stay close to SJO Airport to avoid city traffic."
     },
@@ -172,7 +173,7 @@
         { "type": "event", "time": "7:00 AM", "icon": "🚪", "text": "Check out of Cariblue Beach and Jungle Resort" },
         { "type": "drive", "route": "Puerto Viejo → La Pavona", "duration": "~3.5-4.5h" }
       ],
-      "note": "💡 TODO: no lodging is booked for the night of Sep 28 — Mawamba Lodge check-in isn't until Tue Sep 29 at 12:30 PM, so there's an unaccounted night near La Pavona/Guápiles that still needs a place to stay. Group: drive to La Pavona (3.5–4.5h), park the car, take the boat over. Yoav: 6:00 AM shuttle from Puerto Viejo direct to SJO Airport, arriving before 4:00 PM — TODO confirm who Yoav is and their travel details; not on the United confirmation we have."
+      "note": "💡 TODO: no lodging is booked for the night of Sep 28 — Mawamba Lodge check-in isn't until Tue Sep 29 at 12:30 PM, so there's an unaccounted night near La Pavona/Guápiles that still needs a place to stay. Group: drive to La Pavona (3.5–4.5h), park the car, take the boat over. Yoav: 6:00 AM shuttle from Puerto Viejo direct to SJO Airport, arriving before 4:00 PM, then flies home via Frankfurt the next evening (Lufthansa LH 519, confirmation Y8NN9R) — TODO: no lodging is booked yet for Yoav's night in San José (Sep 28–29) before that flight."
     },
     {
       "date": "2026-09-29",
@@ -183,7 +184,7 @@
       "items": [
         { "type": "event", "time": "12:30 PM", "icon": "🛶", "text": "Check into Mawamba Lodge (boat or plane access only)", "link": { "href": "#accommodation", "text": "Mawamba Lodge" } }
       ],
-      "note": "💡 No public or private boats leave La Pavona dock after 4:00 PM — call the lodge before starting transit. Reception is closed 8:00 PM–5:30 AM."
+      "note": "💡 No public or private boats leave La Pavona dock after 4:00 PM — call the lodge before starting transit. Reception is closed 8:00 PM–5:30 AM. Yoav flies home separately tonight: San José (SJO) → Frankfurt (FRA), 7:25 PM · LH 519."
     },
     {
       "date": "2026-09-30",
@@ -240,6 +241,26 @@
       "nonstop": true,
       "confirmation": "IGHJDR",
       "class": "United Economy (XN)"
+    },
+    {
+      "direction": "outbound",
+      "date": "2026-09-19",
+      "airline": "Lufthansa",
+      "flightNumber": "LH 518",
+      "from": { "code": "FRA", "city": "Frankfurt, Germany", "time": "1:35 PM" },
+      "to": { "code": "SJO", "city": "San José, CR", "time": "5:35 PM" },
+      "duration": "12h 00m",
+      "confirmation": "Y8NN9R"
+    },
+    {
+      "direction": "return",
+      "date": "2026-09-29",
+      "airline": "Lufthansa",
+      "flightNumber": "LH 519",
+      "from": { "code": "SJO", "city": "San José, CR", "time": "7:25 PM" },
+      "to": { "code": "FRA", "city": "Frankfurt, Germany", "time": "2:45 PM" },
+      "duration": "11h 20m",
+      "confirmation": "Y8NN9R"
     }
   ],
   "lodging": [
@@ -321,6 +342,7 @@
   ],
   "travelers": [
     { "name": "Barkay Wolfsohn", "seats": { "outbound": "22F", "return": "22F" } },
-    { "name": "Shani Wolfsohn", "seats": { "outbound": "22D", "return": "22D" } }
+    { "name": "Shani Wolfsohn", "seats": { "outbound": "22D", "return": "22D" } },
+    { "name": "Yoav" }
   ]
 }
