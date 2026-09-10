@@ -112,7 +112,12 @@
             "description": "Ordered list of events, drive segments, and venue cards making up this day.",
             "items": { "$ref": "#/$defs/dayItem" }
           },
-          "note": { "type": "string", "description": "Callout box shown at the end of the day block." }
+          "note": { "type": "string", "description": "Callout box shown at the end of the day block." },
+          "aiSuggestions": {
+            "type": "array",
+            "items": { "type": "string" },
+            "description": "AI-generated suggestion list of extra things to do that day, based on the day's destination. Rendered as its own callout below the note."
+          }
         }
       }
     },

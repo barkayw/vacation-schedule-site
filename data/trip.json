@@ -87,7 +87,11 @@
         { "type": "event", "time": "2:00 PM", "icon": "🏨", "text": "Check into Hampton by Hilton San José Airport", "link": { "href": "#accommodation", "text": "Hampton by Hilton" } },
         { "type": "event", "time": "5:35 PM", "icon": "✈️", "text": "Yoav arrives separately: Frankfurt (FRA) → San José (SJO) · LH 518", "link": { "href": "#flights", "text": "LH 518" } }
       ],
-      "note": "💡 Stay close to SJO Airport to avoid city traffic."
+      "note": "💡 Stay close to SJO Airport to avoid city traffic.",
+      "aiSuggestions": [
+        "Grab an early dinner at a soda (local diner) near the hotel — casado or arroz con pollo is a good first-night intro to Costa Rican food.",
+        "If Yoav's evening flight lands on time, a quick hotel-lobby coffee catch-up beats waiting until the drive north."
+      ]
     },
     {
       "date": "2026-09-20",
@@ -100,7 +104,11 @@
         { "type": "drive", "route": "San José → La Fortuna", "duration": "~4h" },
         { "type": "event", "time": "3:00 PM", "icon": "🏡", "text": "Check into Fortuna Retreat", "link": { "href": "#accommodation", "text": "Fortuna Retreat" } }
       ],
-      "note": "💡 4-hour drive. Leave early to avoid heavy afternoon rain."
+      "note": "💡 4-hour drive. Leave early to avoid heavy afternoon rain.",
+      "aiSuggestions": [
+        "Once settled in La Fortuna, an evening soak at Eco Termales or Tabacón hot springs is a relaxed way to end a long drive day.",
+        "Dinner in downtown La Fortuna at Anch'io Ristorante or Rainforest Cafe — both walkable if staying near town."
+      ]
     },
     {
       "date": "2026-09-21",
@@ -108,7 +116,12 @@
       "destinationId": "la-fortuna",
       "title": "Day 3 — Explore the Arenal Area",
       "theme": "La Fortuna Waterfall in the morning, Arenal lava fields in the afternoon.",
-      "note": "💡 Nothing booked yet — plan: La Fortuna Waterfall (morning), Arenal Volcano National Park lava fields (afternoon)."
+      "note": "💡 Nothing booked yet — plan: La Fortuna Waterfall (morning), Arenal Volcano National Park lava fields (afternoon).",
+      "aiSuggestions": [
+        "Combine the waterfall with the nearby Arenal 1968 trail if there's daylight left — easy, flat walking with volcano views.",
+        "Sunset over Lake Arenal from the Arenal Dam road is a quick, free detour on the way back into town.",
+        "Cap the day with a casual dinner at Soda La Parada or Lava Lounge, both popular with the after-hike crowd."
+      ]
     },
     {
       "date": "2026-09-22",
@@ -116,7 +129,12 @@
       "destinationId": "la-fortuna",
       "title": "Day 4 — Explore the Arenal Area",
       "theme": "Mistico Hanging Bridges in the morning, hot springs in the afternoon.",
-      "note": "💡 Nothing booked yet — plan: Mistico Arenal Hanging Bridges Park (2–3h, morning), hot springs (afternoon)."
+      "note": "💡 Nothing booked yet — plan: Mistico Arenal Hanging Bridges Park (2–3h, morning), hot springs (afternoon).",
+      "aiSuggestions": [
+        "Go early to Mistico (gates open ~7 AM) — cooler temps and better odds of spotting sloths and birds before tour buses arrive.",
+        "If the group wants a change from Tabacón/Eco Termales, Baldi Hot Springs has more pools and a livelier, resort-style feel.",
+        "Chocolate tour add-on near La Fortuna is an easy, short activity to slot in if there's a gap between bridges and springs."
+      ]
     },
     {
       "date": "2026-09-23",
@@ -124,7 +142,12 @@
       "destinationId": "la-fortuna",
       "title": "Day 5 — Last Day in La Fortuna",
       "theme": "Ziplining/canyoning in the morning, a night tour to close out La Fortuna.",
-      "note": "💡 Nothing booked yet — plan: ziplining and waterfall rappelling (canyoning) adventure (morning), night tour or floating night tour (evening)."
+      "note": "💡 Nothing booked yet — plan: ziplining and waterfall rappelling (canyoning) adventure (morning), night tour or floating night tour (evening).",
+      "aiSuggestions": [
+        "If canyoning feels like too much after a week of activity, Arenal has gentler alternatives — a Class II–III rafting float on the Balsa River, or an ATV/buggy tour through farmland with volcano views.",
+        "Leave a window before the night tour to browse the La Fortuna town square and souvenir shops.",
+        "Pack out early for the drive to Puerto Viejo tomorrow — an early wind-down tonight makes the ~5-6h transit easier."
+      ]
     },
     {
       "date": "2026-09-24",
@@ -137,7 +160,11 @@
         { "type": "drive", "route": "La Fortuna → Puerto Viejo", "duration": "~5-6h" },
         { "type": "event", "time": "3:00 PM", "icon": "🏡", "text": "Check into Cariblue Beach and Jungle Resort", "link": { "href": "#accommodation", "text": "Cariblue" } }
       ],
-      "note": "💡 5–6 hours transit. Monitor Route 32 via Waze. Evening in Puerto Viejo — dinner at Koki Beach Restaurant."
+      "note": "💡 5–6 hours transit. Monitor Route 32 via Waze. Evening in Puerto Viejo — dinner at Koki Beach Restaurant.",
+      "aiSuggestions": [
+        "A stop at the Sloth Sanctuary or a roadside soda near Guápiles breaks up the long Route 32 drive.",
+        "After dinner, Puerto Viejo's small downtown strip has a relaxed bar/live-music scene if anyone has energy left."
+      ]
     },
     {
       "date": "2026-09-25",
@@ -145,7 +172,12 @@
       "destinationId": "puerto-viejo",
       "title": "Day 7 — Caribbean Coast",
       "theme": "Cahuita National Park in the morning, Playa Blanca in the afternoon.",
-      "note": "💡 Nothing booked yet — plan: Cahuita National Park coastal trail (~5mi/8km, morning), relax at Playa Blanca (afternoon)."
+      "note": "💡 Nothing booked yet — plan: Cahuita National Park coastal trail (~5mi/8km, morning), relax at Playa Blanca (afternoon).",
+      "aiSuggestions": [
+        "Cahuita's reef is one of the better snorkeling spots on this coast — a local guide can arrange a short boat snorkel trip after the trail.",
+        "Cahuita town itself has good, casual Caribbean-style lunch spots (rice and beans, fresh fish) if the group wants a change from resort dining.",
+        "The coastal trail has no shade for stretches — bring water and sun protection, and start before midday heat sets in."
+      ]
     },
     {
       "date": "2026-09-26",
@@ -153,7 +185,12 @@
       "destinationId": "puerto-viejo",
       "title": "Day 8 — Caribbean Coast",
       "theme": "Coffee & chocolate tour in the morning, Punta Uva in the afternoon.",
-      "note": "💡 Nothing booked yet — plan: Coffee & Chocolate Tour (optional Bribri Indigenous chocolate/cacao experience, morning), relax at Punta Uva (afternoon)."
+      "note": "💡 Nothing booked yet — plan: Coffee & Chocolate Tour (optional Bribri Indigenous chocolate/cacao experience, morning), relax at Punta Uva (afternoon).",
+      "aiSuggestions": [
+        "The Jaguar Rescue Center (near Cariblue) offers guided visits and pairs well with a Punta Uva afternoon — worth booking a morning slot ahead.",
+        "Punta Uva has calmer, more swimmable water than most of this coast — good if anyone wants a lower-key beach afternoon.",
+        "Horseback riding along the beach near Punta Uva/Manzanillo is a popular half-day add-on if there's an open afternoon."
+      ]
     },
     {
       "date": "2026-09-27",
@@ -161,7 +198,12 @@
       "destinationId": "puerto-viejo",
       "title": "Day 9 — Caribbean Coast",
       "theme": "Beach-hopping to Punta Uva and Manzanillo, plus the wildlife refuge.",
-      "note": "💡 Nothing booked yet — plan: beach-hopping to Punta Uva and Manzanillo, Manzanillo Wildlife Refuge."
+      "note": "💡 Nothing booked yet — plan: beach-hopping to Punta Uva and Manzanillo, Manzanillo Wildlife Refuge.",
+      "aiSuggestions": [
+        "Snorkeling or a guided dive off Manzanillo is worth arranging locally — the reef here is one of the better ones on the Caribbean coast.",
+        "The Manzanillo–Punta Mona coastal trail is a good option for anyone wanting a longer hike through the refuge instead of pure beach time.",
+        "This is the last full day in Puerto Viejo — a sunset dinner at a beachfront spot like Le Cameleon or Refugio Grill is a nice way to close it out."
+      ]
     },
     {
       "date": "2026-09-28",
@@ -173,7 +215,11 @@
         { "type": "event", "time": "7:00 AM", "icon": "🚪", "text": "Check out of Cariblue Beach and Jungle Resort" },
         { "type": "drive", "route": "Puerto Viejo → La Pavona", "duration": "~3.5-4.5h" }
       ],
-      "note": "💡 TODO: no lodging is booked for the night of Sep 28 — Mawamba Lodge check-in isn't until Tue Sep 29 at 12:30 PM, so there's an unaccounted night near La Pavona/Guápiles that still needs a place to stay. Group: drive to La Pavona (3.5–4.5h), park the car, take the boat over. Optional: Jaguar Rescue Center — but the 7:00 AM departure may not leave time; confirm before counting on it. Yoav: 6:00 AM shuttle from Puerto Viejo direct to SJO Airport (book at caribeshuttle.com/puerto-viejo-cahuita-to-san-jose), arriving before 4:00 PM, then flies home via Frankfurt the next evening (Lufthansa LH 519, confirmation Y8NN9R) — TODO: no lodging is booked yet for Yoav's night in San José (Sep 28–29) before that flight."
+      "note": "💡 TODO: no lodging is booked for the night of Sep 28 — Mawamba Lodge check-in isn't until Tue Sep 29 at 12:30 PM, so there's an unaccounted night near La Pavona/Guápiles that still needs a place to stay. Group: drive to La Pavona (3.5–4.5h), park the car, take the boat over. Optional: Jaguar Rescue Center — but the 7:00 AM departure may not leave time; confirm before counting on it. Yoav: 6:00 AM shuttle from Puerto Viejo direct to SJO Airport (book at caribeshuttle.com/puerto-viejo-cahuita-to-san-jose), arriving before 4:00 PM, then flies home via Frankfurt the next evening (Lufthansa LH 519, confirmation Y8NN9R) — TODO: no lodging is booked yet for Yoav's night in San José (Sep 28–29) before that flight.",
+      "aiSuggestions": [
+        "If the Jaguar Rescue Center stop doesn't fit before the boat, a quick coffee/snack break in Guápiles is a reasonable substitute on the La Pavona drive.",
+        "Pack a dry bag or waterproof cover for electronics — the boat crossing to Tortuguero can get splashy, and there may be rain."
+      ]
     },
     {
       "date": "2026-09-29",
@@ -184,7 +230,11 @@
       "items": [
         { "type": "event", "time": "12:30 PM", "icon": "🛶", "text": "Check into Mawamba Lodge (boat or plane access only)", "link": { "href": "#accommodation", "text": "Mawamba Lodge" } }
       ],
-      "note": "💡 No public or private boats leave La Pavona dock after 4:00 PM — call the lodge before starting transit. Reception is closed 8:00 PM–5:30 AM. Yoav flies home separately tonight: San José (SJO) → Frankfurt (FRA), 7:25 PM · LH 519."
+      "note": "💡 No public or private boats leave La Pavona dock after 4:00 PM — call the lodge before starting transit. Reception is closed 8:00 PM–5:30 AM. Yoav flies home separately tonight: San José (SJO) → Frankfurt (FRA), 7:25 PM · LH 519.",
+      "aiSuggestions": [
+        "Ask Mawamba Lodge about an included or add-on afternoon canal tour on arrival day — a good way to spot wildlife before the main full-day tour tomorrow.",
+        "A guided night walk near the lodge is worth asking about — frogs, insects, and nocturnal wildlife are active after dark in Tortuguero."
+      ]
     },
     {
       "date": "2026-09-30",
@@ -192,7 +242,12 @@
       "destinationId": "tortuguero",
       "title": "Day 12 — Tortuguero National Park",
       "theme": "Full day for a morning canoe canal tour and wildlife spotting.",
-      "note": "💡 Nothing booked yet — plan is a morning canoe canal tour."
+      "note": "💡 Nothing booked yet — plan is a morning canoe canal tour.",
+      "aiSuggestions": [
+        "Tortuguero village (a short boat ride from most lodges) has the Sea Turtle Conservancy museum — good low-key option for the afternoon after the canal tour.",
+        "Lodges here typically have their own trails and gardens (frogs, butterflies) — worth a self-guided walk if the group wants downtime before dinner.",
+        "September–October is green turtle nesting season here — ask the lodge about an evening turtle-watching walk if available."
+      ]
     },
     {
       "date": "2026-10-01",
@@ -203,7 +258,12 @@
       "items": [
         { "type": "event", "time": "5:30 AM", "icon": "🚪", "text": "Check out of Mawamba Lodge" }
       ],
-      "note": "💡 TODO: no lodging is booked for the night of Oct 1 in San José, ahead of the next day's flight. Take the early morning boat out of Tortuguero, pick up the car at La Pavona, and drive back via Route 32 before sunset."
+      "note": "💡 TODO: no lodging is booked for the night of Oct 1 in San José, ahead of the next day's flight. Take the early morning boat out of Tortuguero, pick up the car at La Pavona, and drive back via Route 32 before sunset.",
+      "aiSuggestions": [
+        "If the drive back finishes with daylight to spare, La Paz Waterfall Gardens is a short detour off Route 32 for a last nature stop before the city.",
+        "Look for a hotel near San José/SJO for the last night rather than downtown — keeps tomorrow's early departure-day logistics simple.",
+        "A relaxed dinner near the hotel tonight beats a late one — it's an early flight-prep day tomorrow."
+      ]
     },
     {
       "date": "2026-10-02",
@@ -214,7 +274,11 @@
         { "type": "event", "time": "12:44 PM", "icon": "✈️", "text": "Depart San José (SJO) → Newark (EWR) · UA 1560", "link": { "href": "#flights", "text": "UA 1560" } },
         { "type": "event", "time": "8:00 PM", "icon": "🛬", "text": "Arrive Newark (EWR) 🏠" }
       ],
-      "note": "💡 Flight at 12:00 PM — head straight to the airport and arrive by 9:00 AM."
+      "note": "💡 Flight at 12:00 PM — head straight to the airport and arrive by 9:00 AM.",
+      "aiSuggestions": [
+        "Grab breakfast near the hotel/airport rather than at SJO — options inside security are limited before an international flight.",
+        "Return any rental car with a full tank early — the SJO rental return area can be slow during morning turnover."
+      ]
     }
   ],
   "flights": [

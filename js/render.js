@@ -271,6 +271,10 @@ function renderDayBlock(trip, day) {
     ${day.theme ? `<p class="day-theme">${esc(day.theme)}</p>` : ''}
     ${items}
     ${day.note ? `<div class="day-note">${esc(day.note)}</div>` : ''}
+    ${day.aiSuggestions && day.aiSuggestions.length ? `<div class="day-ai-suggestions">
+      <div class="day-ai-suggestions-title">✨ AI Suggestions</div>
+      <ul>${day.aiSuggestions.map((s) => `<li>${esc(s)}</li>`).join('')}</ul>
+    </div>` : ''}
   </div>`;
 }
 

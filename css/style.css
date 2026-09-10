@@ -216,6 +216,10 @@ section h2{font-size:1.4rem;color:#e8f0eb;border-left:4px solid var(--color-acce
 .day-block li .li-time{font-weight:600;color:#86efac;white-space:nowrap;min-width:120px;font-size:.8rem}
 .day-block li .li-icon{font-size:.95rem;flex-shrink:0}
 .day-block .day-note{margin-top:.5rem;padding:.6rem .8rem;background:rgba(45,122,74,0.2);border-radius:10px;font-size:.8rem;color:#bbb;border-left:3px solid var(--color-accent)}
+.day-block .day-ai-suggestions{margin-top:.5rem;padding:.6rem .8rem;background:rgba(124,92,239,0.15);border-radius:10px;font-size:.8rem;color:#bbb;border-left:3px solid #9d8cf5}
+.day-block .day-ai-suggestions-title{font-weight:600;color:#c4b8ff;margin-bottom:.3rem;font-size:.78rem}
+.day-block .day-ai-suggestions ul{margin:0;padding-left:1.1rem}
+.day-block .day-ai-suggestions li{margin:.2rem 0}
 
 /* DAY COLOR ACCENTS — cycling palette */
 .day-color-1{border-left-color:#e8a44a;background:rgba(232,164,74,0.08)}
