@@ -262,10 +262,11 @@ function renderDayBlock(trip, day) {
   const colorClass = `day-color-${(dayColorCounter++ % 5) + 1}`;
   const dateLabel = day.dateLabel || formatFullDate(day.date);
   const items = (day.items || []).map((item) => renderDayItem(trip, item)).join('\n');
-  return `<div class="day-block ${colorClass}">
+  return `<div class="day-block ${colorClass}" data-date="${attr(day.date)}" data-destination-id="${attr(day.destinationId)}">
     <div class="day-block-header">
       <span class="day-num">${esc(day.dayNumber || '')}${day.dayNumber ? ' — ' : ''}${esc(day.title.replace(/^Day\s*\d+\s*—\s*/i, ''))}</span>
       <span class="day-date">${esc(dateLabel)}</span>
+      <span class="day-weather" data-day-weather hidden></span>
     </div>
     ${day.theme ? `<p class="day-theme">${esc(day.theme)}</p>` : ''}
     ${items}

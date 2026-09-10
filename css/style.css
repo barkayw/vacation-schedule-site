@@ -201,9 +201,14 @@ section h2{font-size:1.4rem;color:#e8f0eb;border-left:4px solid var(--color-acce
 
 /* DAY BLOCKS inside phases */
 .day-block{background:rgba(30,45,35,0.6);border-radius:14px;padding:1.3rem 1.4rem;border:1px solid rgba(255,255,255,0.1);border-left:4px solid rgba(255,255,255,0.15);backdrop-filter:blur(10px);box-shadow:0 4px 15px rgba(0,0,0,0.2);margin-bottom:.8rem;transition:border-color .3s}
-.day-block-header{display:flex;align-items:baseline;gap:.6rem;margin-bottom:.3rem;flex-wrap:wrap}
+.day-block-header{display:flex;align-items:center;gap:.6rem;margin-bottom:.3rem;flex-wrap:wrap}
 .day-block-header .day-num{font-family:'Playfair Display',serif;font-size:1.05rem;font-weight:700;color:#e8f0eb}
 .day-block-header .day-date{font-size:.78rem;color:#aaa;font-weight:500}
+.day-weather{margin-left:auto;display:inline-flex;align-items:center;gap:.35rem;background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.1);border-radius:999px;padding:.2rem .65rem;font-size:.72rem;font-weight:600;color:#d1fae5;white-space:nowrap}
+.day-weather[hidden]{display:none}
+.day-weather-icon{font-size:.95rem;line-height:1}
+.day-weather-temps{color:#e8f0eb}
+.day-weather-extra{color:#86efac;font-weight:600;font-size:.68rem}
 .day-theme{font-size:.82rem;color:#bbb;font-style:italic;margin-bottom:.8rem;padding-left:.1rem}
 .day-block ul{list-style:none;padding:0}
 .day-block li{padding:.45rem 0;border-bottom:1px solid rgba(255,255,255,0.05);font-size:.88rem;color:#ccc;display:flex;align-items:flex-start;gap:.5rem}
@@ -253,6 +258,17 @@ section h2{font-size:1.4rem;color:#e8f0eb;border-left:4px solid var(--color-acce
 .weather-note .weather-icon{font-size:1.3rem;flex-shrink:0}
 .weather-note .weather-text{font-size:.82rem;color:#ddd;line-height:1.6}
 .weather-note .weather-text strong{color:#86efac}
+
+.forecast-strip{background:rgba(30,45,35,0.6);border:1px solid rgba(255,255,255,0.1);border-radius:16px;padding:.9rem 1rem .7rem;margin-bottom:1.5rem;backdrop-filter:blur(10px)}
+.forecast-strip-scroll{display:flex;gap:.5rem;overflow-x:auto;padding-bottom:.35rem;-webkit-overflow-scrolling:touch}
+.forecast-day{flex:0 0 auto;min-width:78px;text-align:center;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:.55rem .45rem}
+.forecast-day.forecast-outlook{opacity:.85;border-style:dashed}
+.forecast-dow{font-size:.65rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:#aaa}
+.forecast-icon{font-size:1.25rem;margin:.2rem 0}
+.forecast-temps{font-size:.78rem;font-weight:700;color:#e8f0eb}
+.forecast-temps span{color:#aaa;font-weight:500}
+.forecast-place{font-size:.58rem;color:#999;margin-top:.15rem;max-width:86px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.forecast-credit{font-size:.65rem;color:#888;margin:.45rem 0 0}
 
 /* STATUS BANNER */
 .status-banner{background:rgba(230,81,0,0.15);border:1px solid rgba(230,81,0,0.3);border-radius:14px;padding:1rem 1.2rem;margin-bottom:1.5rem;display:flex;align-items:flex-start;gap:.7rem}

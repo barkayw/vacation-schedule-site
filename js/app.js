@@ -1,4 +1,5 @@
 import * as render from './render.js';
+import * as weather from './weather.js';
 
 const SESSION_KEY = 'vss_auth';
 
@@ -227,6 +228,29 @@ function initMap() {
 
 const PALETTE_HEX = ['#1b5e20', '#bf360c', '#01579b', '#4a148c', '#4e342e'];
 
+async function fillDayWeather(tripData) {
+  const strip = document.getElementById('forecast-strip');
+  try {
+    const result = await weather.loadDayForecasts(tripData);
+    const html = weather.renderForecastStrip(result);
+    if (html && strip) {
+      strip.innerHTML = html;
+      strip.style.display = '';
+    }
+    document.querySelectorAll('[data-day-weather]').forEach((el) => {
+      const block = el.closest('.day-block');
+      const date = block?.getAttribute('data-date');
+      const destId = block?.getAttribute('data-destination-id');
+      const wx = destId && date ? result.byDestDate[destId]?.[date] : null;
+      if (!wx) return;
+      el.innerHTML = weather.renderDayWeatherChip(wx, result.symbol);
+      el.hidden = false;
+    });
+  } catch {
+    if (strip) strip.style.display = 'none';
+  }
+}
+
 // ---------------------------------------------------------------------
 // Boot
 // ---------------------------------------------------------------------
@@ -247,15 +271,16 @@ async function main() {
   document.getElementById('main-nav').innerHTML = render.renderNav(trip);
   document.getElementById('journey-flow').innerHTML = render.renderJourneyFlow(trip);
 
-  const weather = render.renderWeather(trip);
-  if (weather) {
-    document.getElementById('weather-icon').textContent = weather.icon;
-    document.getElementById('weather-text').innerHTML = weather.text;
+  const weatherNote = render.renderWeather(trip);
+  if (weatherNote) {
+    document.getElementById('weather-icon').textContent = weatherNote.icon;
+    document.getElementById('weather-text').innerHTML = weatherNote.text;
     document.getElementById('weather-note').style.display = '';
   }
 
   render.resetDayColorCounter();
   document.getElementById('phases').innerHTML = render.renderPhases(trip);
+  fillDayWeather(trip);
 
   if (!trip.destinations.some((d) => d.coordinates)) {
     document.getElementById('map').style.display = 'none';
