@@ -269,6 +269,7 @@ function renderDayBlock(trip, day) {
       <span class="day-weather" data-day-weather hidden></span>
     </div>
     ${day.theme ? `<p class="day-theme">${esc(day.theme)}</p>` : ''}
+    ${day.mapLink ? `<a href="${attr(day.mapLink)}" target="_blank" class="day-map-link">🗺️ View driving route on Google Maps</a>` : ''}
     ${items}
     ${day.note ? `<div class="day-note">${esc(day.note)}</div>` : ''}
     ${day.aiSuggestions && day.aiSuggestions.length ? `<div class="day-ai-suggestions">

@@ -97,17 +97,52 @@
       "date": "2026-09-20",
       "dayNumber": "Day 2",
       "destinationId": "la-fortuna",
-      "title": "Day 2 — Drive to La Fortuna",
-      "theme": "Head north from San José toward the Arenal Volcano area.",
+      "title": "Day 2 — Drive to La Fortuna via the Coffee Route",
+      "theme": "Head north from San José toward Arenal, with stops at a coffee farm, oxcart town, and topiary park along the way.",
+      "mapLink": "https://www.google.com/maps/dir/?api=1&origin=9.9281,-84.0907&destination=10.4708,-84.6413&waypoints=10.0977,-84.2113%7C10.0898,-84.3476%7C10.1845,-84.3917&travelmode=driving",
       "items": [
-        { "type": "event", "time": "12:00 PM", "icon": "🚪", "text": "Check out of Hampton by Hilton San José Airport" },
-        { "type": "drive", "route": "San José → La Fortuna", "duration": "~4h" },
-        { "type": "event", "time": "3:00 PM", "icon": "🏡", "text": "Check into Fortuna Retreat", "link": { "href": "#accommodation", "text": "Fortuna Retreat" } }
+        { "type": "event", "time": "9:00 AM", "icon": "🚪", "text": "Check out of Hampton by Hilton San José Airport" },
+        { "type": "drive", "route": "San José → Hacienda Doka (Alajuela)", "duration": "~30 min" },
+        {
+          "type": "venue",
+          "icon": "☕",
+          "name": "Hacienda Doka Coffee Tour",
+          "mapLink": "https://www.google.com/maps/place/?q=place_id:ChIJzzoGaZP2oI8RWVFypSpNrNU",
+          "coordinates": { "lat": 10.0977, "lng": -84.2113 },
+          "time": "~1.5h",
+          "desc": "Century-old coffee estate on the slopes of Poás, with guided tours through the plantation and processing mill.",
+          "highlights": ["Coffee tasting", "Free butterfly arboretum", "Café/breakfast on site"]
+        },
+        { "type": "drive", "route": "Hacienda Doka → Sarchí", "duration": "~45 min" },
+        {
+          "type": "venue",
+          "icon": "🎨",
+          "name": "Sarchí — Oxcart Town",
+          "mapLink": "https://www.google.com/maps/place/?q=place_id:ChIJYSbIWWVZoI8RvsOA0lV7tG8",
+          "coordinates": { "lat": 10.0898, "lng": -84.3476 },
+          "time": "~45 min",
+          "desc": "Costa Rica's traditional artisan hub, famous for hand-painted oxcarts (carretas) — home to the world's largest oxcart and craft workshops.",
+          "highlights": ["Fábrica de Carretas Joaquín Chaverri workshop", "Sarchí's colorful central park/church"]
+        },
+        { "type": "drive", "route": "Sarchí → Zarcero", "duration": "~40 min" },
+        {
+          "type": "venue",
+          "icon": "🌳",
+          "name": "Zarcero — Parque Francisco Alvarado",
+          "mapLink": "https://www.google.com/maps/place/?q=place_id:ChIJV1P1TaFdoI8RGc8WKnb_vT0",
+          "coordinates": { "lat": 10.1845, "lng": -84.3917 },
+          "time": "~30–45 min",
+          "desc": "Small mountain town famous for its whimsical cypress topiary garden in front of the church — arches, animals, and figures sculpted from shrubs.",
+          "highlights": ["Topiary sculptures", "Local cheese and fruit stands nearby"]
+        },
+        { "type": "drive", "route": "Zarcero → La Fortuna", "duration": "~1.5h" },
+        { "type": "event", "time": "4:30 PM", "icon": "🏡", "text": "Check into Fortuna Retreat", "link": { "href": "#accommodation", "text": "Fortuna Retreat" } }
       ],
-      "note": "💡 4-hour drive. Leave early to avoid heavy afternoon rain.",
+      "note": "💡 With stops, this becomes a full-day drive (~4h driving + stop time). Leave by 9 AM to arrive before dark and to give Doka's tour schedule room (last tours ~3:30 PM). Route via Alajuela/Sarchí/Zarcero is a scenic alternative to the direct highway.",
       "aiSuggestions": [
         "Once settled in La Fortuna, an evening soak at Eco Termales or Tabacón hot springs is a relaxed way to end a long drive day.",
-        "Dinner in downtown La Fortuna at Anch'io Ristorante or Rainforest Cafe — both walkable if staying near town."
+        "Dinner in downtown La Fortuna at Anch'io Ristorante or Rainforest Cafe — both walkable if staying near town.",
+        "If time is tight, Zarcero's topiary park is the easiest stop to skip or shorten — it only takes a few minutes to walk through."
       ]
     },
     {

@@ -107,6 +107,7 @@
           "destinationId": { "type": "string", "description": "Which destination's phase this day belongs to." },
           "title": { "type": "string", "description": "e.g. \"Day 1 — Arrival\"" },
           "theme": { "type": "string", "description": "One-line italic summary shown under the day title." },
+          "mapLink": { "type": "string", "format": "uri", "description": "Link to a map (e.g. Google Maps directions) showing this day's route. Rendered as a button below the theme. Typically used on drive days." },
           "items": {
             "type": "array",
             "description": "Ordered list of events, drive segments, and venue cards making up this day.",
@@ -322,7 +323,17 @@
             "desc": { "type": "string" },
             "highlights": { "type": "array", "items": { "type": "string" } },
             "activityId": { "type": "string", "description": "If set, links to a matching entry in top-level `activities` and shows its booked-badge inline." },
-            "altOptionOf": { "type": "string", "description": "If set, marks this venue as an alternate choice alongside the venue with this name." }
+            "altOptionOf": { "type": "string", "description": "If set, marks this venue as an alternate choice alongside the venue with this name." },
+            "coordinates": {
+              "type": "object",
+              "description": "Used to plot this venue as a waypoint on the trip map, e.g. a scenic stop along a drive between destinations. Omit to leave it off the map.",
+              "required": ["lat", "lng"],
+              "additionalProperties": false,
+              "properties": {
+                "lat": { "type": "number", "minimum": -90, "maximum": 90 },
+                "lng": { "type": "number", "minimum": -180, "maximum": 180 }
+              }
+            }
           },
           "required": ["type", "name"],
           "additionalProperties": false

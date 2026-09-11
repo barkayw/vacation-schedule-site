@@ -182,48 +182,111 @@ function updateCountdown() {
 // Map
 // ---------------------------------------------------------------------
 
-function initMap() {
+async function initMap() {
   const mapEl = document.getElementById('trip-map');
   if (!mapEl || mapEl._leaflet_id) return;
-  const locations = trip.destinations
-    .filter((d) => d.coordinates)
-    .map((d, i) => ({
-      name: `${d.emoji || '📍'} ${d.name}`,
-      lat: d.coordinates.lat,
-      lng: d.coordinates.lng,
-      desc: d.mapDescription || '',
-      color: PALETTE_HEX[i % PALETTE_HEX.length]
-    }));
-  if (!locations.length) {
+  const destinations = trip.destinations.filter((d) => d.coordinates);
+  if (!destinations.length) {
     document.getElementById('map').style.display = 'none';
     return;
   }
 
-  const map = L.map('trip-map', { scrollWheelZoom: false }).setView([locations[0].lat, locations[0].lng], 8);
+  // Build the full ordered list of points along the route: each destination,
+  // with any en-route stops (venues with coordinates on that leg's arrival day,
+  // e.g. a coffee farm on a drive day) inserted just before it. Stops inherit
+  // the color of the destination they lead into.
+  const points = [{
+    name: destinations[0].name,
+    icon: destinations[0].emoji || '📍',
+    desc: destinations[0].mapDescription || '',
+    lat: destinations[0].coordinates.lat,
+    lng: destinations[0].coordinates.lng,
+    color: PALETTE_HEX[0],
+    isDestination: true
+  }];
+  for (let i = 1; i < destinations.length; i++) {
+    const dest = destinations[i];
+    const color = PALETTE_HEX[i % PALETTE_HEX.length];
+    const arrivalDay = (trip.days || []).find((day) => day.destinationId === dest.id && day.date === dest.arrivalDate);
+    const waypoints = arrivalDay
+      ? (arrivalDay.items || []).filter((item) => item.type === 'venue' && item.coordinates)
+      : [];
+    waypoints.forEach((w) => {
+      points.push({
+        name: w.name, icon: w.icon || '📍', desc: w.desc || '',
+        lat: w.coordinates.lat, lng: w.coordinates.lng, color, isDestination: false
+      });
+    });
+    points.push({
+      name: dest.name, icon: dest.emoji || '📍', desc: dest.mapDescription || '',
+      lat: dest.coordinates.lat, lng: dest.coordinates.lng, color, isDestination: true
+    });
+  }
+
+  const map = L.map('trip-map', { scrollWheelZoom: false }).setView([points[0].lat, points[0].lng], 8);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '© OpenStreetMap',
     maxZoom: 18
   }).addTo(map);
 
-  const route = locations.map((l) => [l.lat, l.lng]);
-  L.polyline(route, { color: '#e8a44a', weight: 3, opacity: 0.7, dashArray: '10, 8', lineCap: 'round' }).addTo(map);
+  const straightLine = points.map((p) => [p.lat, p.lng]);
+  let routeLine = L.polyline(straightLine, { color: '#e8a44a', weight: 3, opacity: 0.7, dashArray: '10, 8', lineCap: 'round' }).addTo(map);
 
-  locations.forEach((loc, i) => {
-    L.circleMarker([loc.lat, loc.lng], {
-      radius: i === 0 || i === locations.length - 1 ? 7 : 9,
-      fillColor: loc.color, color: '#fff', weight: 3, fillOpacity: 0.9
+  // Snap the line to actual roads via OSRM's free public routing demo server
+  // (no API key, but best-effort/rate-limited) — fall back to the straight
+  // line above if it's unreachable or errors.
+  try {
+    const coordsParam = points.map((p) => `${p.lng},${p.lat}`).join(';');
+    const res = await fetch(`https://router.project-osrm.org/route/v1/driving/${coordsParam}?overview=full&geometries=geojson`);
+    const json = await res.json();
+    const geometry = json.routes && json.routes[0] && json.routes[0].geometry;
+    if (geometry && geometry.coordinates && geometry.coordinates.length) {
+      const roadLine = geometry.coordinates.map(([lng, lat]) => [lat, lng]);
+      map.removeLayer(routeLine);
+      routeLine = L.polyline(roadLine, { color: '#e8a44a', weight: 4, opacity: 0.85, lineCap: 'round' }).addTo(map);
+    }
+  } catch (err) {
+    // Offline, or the routing service is unreachable — keep the straight-line fallback.
+  }
+
+  const popupMarkers = points.map((p, i) => {
+    const marker = L.circleMarker([p.lat, p.lng], {
+      radius: p.isDestination ? 9 : 6,
+      fillColor: p.color, color: '#fff', weight: p.isDestination ? 3 : 2, fillOpacity: 0.9
     }).addTo(map).bindPopup(
-      `<div style="font-family:Inter,sans-serif;min-width:140px;"><strong>${render.esc(loc.name)}</strong><br><span style="font-size:.8rem;color:#666;">${render.esc(loc.desc)}</span></div>`
+      `<div style="font-family:Inter,sans-serif;min-width:140px;"><strong>${render.esc(p.icon)} ${render.esc(p.name)}</strong>${p.desc ? `<br><span style="font-size:.8rem;color:#666;">${render.esc(p.desc)}</span>` : ''}</div>`
     );
-    L.marker([loc.lat, loc.lng], {
+    const size = p.isDestination ? 20 : 16;
+    L.marker([p.lat, p.lng], {
       icon: L.divIcon({
         className: '',
-        html: `<div style="background:${loc.color};color:#fff;width:20px;height:20px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:700;font-family:Inter;border:2px solid #fff;box-shadow:0 1px 4px rgba(0,0,0,.3);">${i + 1}</div>`,
-        iconSize: [20, 20], iconAnchor: [10, 10]
+        html: `<div style="background:${p.color};color:#fff;width:${size}px;height:${size}px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:${p.isDestination ? 10 : 9}px;font-weight:700;font-family:Inter;border:2px solid #fff;box-shadow:0 1px 4px rgba(0,0,0,.3);">${i + 1}</div>`,
+        iconSize: [size, size], iconAnchor: [size / 2, size / 2]
       })
     }).addTo(map);
+    return marker;
   });
-  map.fitBounds(L.latLngBounds(route), { padding: [30, 30] });
+  map.fitBounds(L.latLngBounds(straightLine), { padding: [30, 30] });
+
+  // Sidebar list mirrors the map markers — clicking an entry pans to it and opens its popup.
+  const listEl = document.getElementById('map-stops');
+  if (!listEl) return;
+  listEl.innerHTML = points.map((p, i) => `
+    <div class="map-stop" data-index="${i}">
+      <span class="stop-badge" style="background:${p.color}">${i + 1}</span>
+      <div class="stop-body">
+        <div class="stop-name">${render.esc(p.icon)} ${render.esc(p.name)}</div>
+        ${p.desc ? `<div class="stop-desc">${render.esc(p.desc)}</div>` : ''}
+      </div>
+    </div>
+  `).join('');
+  listEl.querySelectorAll('.map-stop').forEach((el) => {
+    el.addEventListener('click', () => {
+      const i = Number(el.dataset.index);
+      map.setView([points[i].lat, points[i].lng], 12, { animate: true });
+      popupMarkers[i].openPopup();
+    });
+  });
 }
 
 const PALETTE_HEX = ['#1b5e20', '#bf360c', '#01579b', '#4a148c', '#4e342e'];
