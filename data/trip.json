@@ -150,10 +150,38 @@
       "dayNumber": "Day 3",
       "destinationId": "la-fortuna",
       "title": "Day 3 — Explore the Arenal Area",
-      "theme": "La Fortuna Waterfall in the morning, Arenal lava fields in the afternoon.",
-      "note": "💡 Nothing booked yet — plan: La Fortuna Waterfall (morning), Arenal Volcano National Park lava fields (afternoon).",
+      "theme": "Easy walking trails: La Fortuna Waterfall in the morning, Arenal lava fields in the afternoon.",
+      "items": [
+        {
+          "type": "venue",
+          "icon": "💦",
+          "name": "La Fortuna Waterfall Trail",
+          "link": "https://www.alltrails.com/trail/costa-rica/alajuela/catarata-rio-fortuna",
+          "time": "~1h round trip",
+          "desc": "Short out-and-back (0.5 mi) to a 70m waterfall with a swimming area at the bottom — the only catch is ~500 steps down and back up, so it's brief but not flat.",
+          "highlights": ["$18 entrance", "Swimming spot at the base", "Go early to beat the crowds and heat"]
+        },
+        {
+          "type": "venue",
+          "icon": "🌋",
+          "name": "Arenal 1968 — Los Guayabos Trail",
+          "link": "https://www.alltrails.com/poi/costa-rica/alajuela/san-carlos/arenal-1968-volcano-view-and-lava-trails",
+          "time": "~1h",
+          "desc": "A genuinely flat, beginner-friendly 1.7km loop through the 1968 lava fields with open views of the volcano and Lake Arenal.",
+          "highlights": ["$27 entrance", "Flat, easy walking", "Great volcano/lake photo spots"]
+        },
+        {
+          "type": "venue",
+          "icon": "🌿",
+          "name": "Arenal Volcano National Park — Lava Field & Lake Viewpoint",
+          "link": "https://www.alltrails.com/trail/costa-rica/alajuela/laguna-y-sendero-a-lava-arenal",
+          "time": "~1.5-2h",
+          "desc": "Gentle, well-maintained park trails (Heliconias → Las Coladas) through regrown rainforest and across old lava rock, ending at a lake/volcano viewpoint.",
+          "highlights": ["National park entrance fee applies", "Mostly flat, easy pace", "Good chance of birds and howler monkeys"]
+        }
+      ],
+      "note": "💡 Nothing booked yet. All three trails below are easy/beginner-friendly (AllTrails links attached) — the waterfall has stairs but is short, and Arenal 1968 + the national park trails are flat.",
       "aiSuggestions": [
-        "Combine the waterfall with the nearby Arenal 1968 trail if there's daylight left — easy, flat walking with volcano views.",
         "Sunset over Lake Arenal from the Arenal Dam road is a quick, free detour on the way back into town.",
         "Cap the day with a casual dinner at Soda La Parada or Lava Lounge, both popular with the after-hike crowd."
       ]
@@ -164,9 +192,43 @@
       "destinationId": "la-fortuna",
       "title": "Day 4 — Explore the Arenal Area",
       "theme": "Mistico Hanging Bridges in the morning, hot springs in the afternoon.",
-      "note": "💡 Nothing booked yet — plan: Mistico Arenal Hanging Bridges Park (2–3h, morning), hot springs (afternoon).",
+      "items": [
+        {
+          "type": "venue",
+          "icon": "🌉",
+          "name": "Mistico Arenal Hanging Bridges Park — Guided Natural History Walk",
+          "link": "https://misticopark.com/tours/natural-history-walk/",
+          "mapLink": "https://www.google.com/maps/search/?api=1&query=Mistico+Park+La+Fortuna+Costa+Rica",
+          "time": "~2.5h",
+          "desc": "Official park-run guided tour with a certified naturalist guide across 3.2km of ground trails and hanging bridges over the rainforest canopy. The park's own site only lists this as a shared-group tour, not a separately-priced private one — call or WhatsApp ahead to ask about arranging an exclusive/private guide for the group.",
+          "highlights": [
+            "Company: Mistico Park (official, family-owned reserve)",
+            "Phone / WhatsApp: +506 2479-8282",
+            "Website: misticopark.com",
+            "Shared tour from $44 + tax/person · English departures 7 AM–2 PM",
+            "Third-party resellers list a Mistico \"private tour\" (private hotel transport + private bilingual guide) around $99/adult, $49/child 4–11, 4–4.5h — not on Mistico's own site, so confirm directly by phone before counting on it."
+          ]
+        },
+        {
+          "type": "venue",
+          "icon": "🚐",
+          "name": "Desafio Adventure Company — Private Arenal Combo (Volcano + Hanging Bridges + Waterfall)",
+          "link": "https://www.desafiocostarica.com/tour-detail/arenal-highlights-combo-volcano-hike-waterfall-hanging-bridges-private",
+          "mapLink": "https://www.google.com/maps/search/?api=1&query=Desafio+Adventure+Company+La+Fortuna+Costa+Rica",
+          "time": "Full day",
+          "desc": "La Fortuna-based adventure operator (running since 1993) offering a private, exclusive-to-your-group version of their Arenal Volcano + Hanging Bridges + La Fortuna Waterfall combo — an alternative to Mistico if a guaranteed private tour matters more than doing Mistico specifically.",
+          "highlights": [
+            "Company: Desafio Adventure Company",
+            "Phone: +506 2479-0020",
+            "Email: reservations@desafiocostarica.com",
+            "Website: desafiocostarica.com",
+            "Shared version of this combo starts at $175 + VAT/person — ask for the private tour's price directly"
+          ]
+        }
+      ],
+      "note": "💡 Nothing booked yet — plan: Mistico Arenal Hanging Bridges Park (2–3h, morning), hot springs (afternoon). Two private-tour routes to consider: ask Mistico directly about a private guide, or book a private combo through Desafio Adventure Company — see options below.",
       "aiSuggestions": [
-        "Go early to Mistico (gates open ~7 AM) — cooler temps and better odds of spotting sloths and birds before tour buses arrive.",
+        "Go early to Mistico (gates open ~6 AM, first English tour 7 AM) — cooler temps and better odds of spotting sloths and birds before tour buses arrive.",
         "If the group wants a change from Tabacón/Eco Termales, Baldi Hot Springs has more pools and a livelier, resort-style feel.",
         "Chocolate tour add-on near La Fortuna is an easy, short activity to slot in if there's a gap between bridges and springs."
       ]
