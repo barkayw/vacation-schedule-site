@@ -301,8 +301,9 @@ function renderDayItem(trip, item) {
 }
 
 function renderVenueCard(trip, item) {
-  const nameLink = item.link
-    ? `<a href="${attr(item.link)}" target="_blank">${esc(item.name)}<span class="map-icon">🔗</span></a>`
+  const venueLink = item.link || item.mapLink;
+  const nameLink = venueLink
+    ? `<a href="${attr(venueLink)}" target="${venueLink.startsWith('#') ? '_self' : '_blank'}">${esc(item.name)}<span class="map-icon">🔗</span></a>`
     : esc(item.name);
   const mapLink = item.mapLink
     ? ` <a href="${attr(item.mapLink)}" target="_blank" title="Google Maps"><span class="map-icon">📍</span></a>`

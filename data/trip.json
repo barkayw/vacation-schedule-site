@@ -97,109 +97,101 @@
       "date": "2026-09-20",
       "dayNumber": "Day 2",
       "destinationId": "la-fortuna",
-      "title": "Day 2 — Drive to La Fortuna via the Coffee Route",
-      "theme": "Head north from San José toward Arenal, with stops at a coffee farm, oxcart town, and topiary park along the way.",
-      "mapLink": "https://www.google.com/maps/dir/?api=1&origin=9.9281,-84.0907&destination=10.4708,-84.6413&waypoints=10.0977,-84.2113%7C10.0898,-84.3476%7C10.1845,-84.3917&travelmode=driving",
+      "title": "Day 2 — Drive from San José to La Fortuna",
+      "theme": "Drive north from San José through Sarchí and Zarcero before arriving in La Fortuna.",
+      "mapLink": "https://www.google.com/maps/dir/?api=1&origin=9.9281,-84.0907&destination=10.4708,-84.6413&waypoints=10.0898,-84.3476%7C10.1845,-84.3917&travelmode=driving",
       "items": [
         { "type": "event", "time": "9:00 AM", "icon": "🚪", "text": "Check out of Hampton by Hilton San José Airport" },
-        { "type": "drive", "route": "San José → Hacienda Doka (Alajuela)", "duration": "~30 min" },
-        {
-          "type": "venue",
-          "icon": "☕",
-          "name": "Hacienda Doka Coffee Tour",
-          "mapLink": "https://www.google.com/maps/place/?q=place_id:ChIJzzoGaZP2oI8RWVFypSpNrNU",
-          "coordinates": { "lat": 10.0977, "lng": -84.2113 },
-          "time": "~1.5h",
-          "desc": "Century-old coffee estate on the slopes of Poás, with guided tours through the plantation and processing mill.",
-          "highlights": ["Coffee tasting", "Free butterfly arboretum", "Café/breakfast on site"]
-        },
-        { "type": "drive", "route": "Hacienda Doka → Sarchí", "duration": "~45 min" },
-        {
-          "type": "venue",
-          "icon": "🎨",
-          "name": "Sarchí — Oxcart Town",
-          "mapLink": "https://www.google.com/maps/place/?q=place_id:ChIJYSbIWWVZoI8RvsOA0lV7tG8",
-          "coordinates": { "lat": 10.0898, "lng": -84.3476 },
-          "time": "~45 min",
-          "desc": "Costa Rica's traditional artisan hub, famous for hand-painted oxcarts (carretas) — home to the world's largest oxcart and craft workshops.",
-          "highlights": ["Fábrica de Carretas Joaquín Chaverri workshop", "Sarchí's colorful central park/church"]
-        },
+        { "type": "drive", "route": "San José → Sarchí", "duration": "~1h" },
+        { "type": "event", "icon": "🎨", "text": "Stop in Sarchí" },
         { "type": "drive", "route": "Sarchí → Zarcero", "duration": "~40 min" },
+        { "type": "event", "icon": "🌳", "text": "Stop in Zarcero" },
+        { "type": "drive", "route": "Zarcero → La Fortuna", "duration": "~1.5h" },
+        { "type": "event", "time": "4:30 PM", "icon": "🏡", "text": "Check into Fortuna Retreat", "link": { "href": "#accommodation", "text": "Fortuna Retreat" } },
         {
           "type": "venue",
-          "icon": "🌳",
-          "name": "Zarcero — Parque Francisco Alvarado",
-          "mapLink": "https://www.google.com/maps/place/?q=place_id:ChIJV1P1TaFdoI8RGc8WKnb_vT0",
-          "coordinates": { "lat": 10.1845, "lng": -84.3917 },
-          "time": "~30–45 min",
-          "desc": "Small mountain town famous for its whimsical cypress topiary garden in front of the church — arches, animals, and figures sculpted from shrubs.",
-          "highlights": ["Topiary sculptures", "Local cheese and fruit stands nearby"]
+          "icon": "🍽️",
+          "name": "Soda La Hormiga",
+          "mapLink": "https://www.google.com/maps/search/?api=1&query=Soda+La+Hormiga+La+Fortuna+Costa+Rica",
+          "desc": "Dinner in La Fortuna."
         },
-        { "type": "drive", "route": "Zarcero → La Fortuna", "duration": "~1.5h" },
-        { "type": "event", "time": "4:30 PM", "icon": "🏡", "text": "Check into Fortuna Retreat", "link": { "href": "#accommodation", "text": "Fortuna Retreat" } }
+        {
+          "type": "venue",
+          "icon": "🐸",
+          "name": "La Fortuna Frogs and Reptiles Wildlife Night Tour",
+          "time": "2 hrs",
+          "desc": "Night tour near The Oasis Butterfly Dome / Oasis Resort.",
+          "activityId": "la-fortuna-frogs-reptiles-night-tour"
+        }
       ],
-      "note": "💡 With stops, this becomes a full-day drive (~4h driving + stop time). Leave by 9 AM to arrive before dark and to give Doka's tour schedule room (last tours ~3:30 PM). Route via Alajuela/Sarchí/Zarcero is a scenic alternative to the direct highway.",
-      "aiSuggestions": [
-        "Once settled in La Fortuna, an evening soak at Eco Termales or Tabacón hot springs is a relaxed way to end a long drive day.",
-        "Dinner in downtown La Fortuna at Anch'io Ristorante or Rainforest Cafe — both walkable if staying near town.",
-        "If time is tight, Zarcero's topiary park is the easiest stop to skip or shorten — it only takes a few minutes to walk through."
-      ]
+      "note": "💡 With stops, this becomes a full-day drive. Leave by 9 AM to arrive in La Fortuna before dark."
     },
     {
       "date": "2026-09-21",
       "dayNumber": "Day 3",
       "destinationId": "la-fortuna",
-      "title": "Day 3 — Explore the Arenal Area",
-      "theme": "Easy walking trails: La Fortuna Waterfall in the morning, Arenal lava fields in the afternoon.",
+      "title": "Day 3 — Arenal Trails, Coffee, and Hot Springs",
+      "theme": "Start with the Arenal 1968 trail, take a coffee break, visit La Fortuna Waterfall, and finish with Eco Termales and dinner.",
       "items": [
-        {
-          "type": "venue",
-          "icon": "💦",
-          "name": "La Fortuna Waterfall Trail",
-          "link": "https://www.alltrails.com/trail/costa-rica/alajuela/catarata-rio-fortuna",
-          "time": "~1h round trip",
-          "desc": "Short out-and-back (0.5 mi) to a 70m waterfall with a swimming area at the bottom — the only catch is ~500 steps down and back up, so it's brief but not flat.",
-          "highlights": ["$18 entrance", "Swimming spot at the base", "Go early to beat the crowds and heat"]
-        },
         {
           "type": "venue",
           "icon": "🌋",
           "name": "Arenal 1968 — Los Guayabos Trail",
           "link": "https://www.alltrails.com/poi/costa-rica/alajuela/san-carlos/arenal-1968-volcano-view-and-lava-trails",
-          "time": "~1h",
+          "time": "Start of day",
           "desc": "A genuinely flat, beginner-friendly 1.7km loop through the 1968 lava fields with open views of the volcano and Lake Arenal.",
           "highlights": ["$27 entrance", "Flat, easy walking", "Great volcano/lake photo spots"]
         },
         {
           "type": "venue",
-          "icon": "🌿",
-          "name": "Arenal Volcano National Park — Lava Field & Lake Viewpoint",
-          "link": "https://www.alltrails.com/trail/costa-rica/alajuela/laguna-y-sendero-a-lava-arenal",
-          "time": "~1.5-2h",
-          "desc": "Gentle, well-maintained park trails (Heliconias → Las Coladas) through regrown rainforest and across old lava rock, ending at a lake/volcano viewpoint.",
-          "highlights": ["National park entrance fee applies", "Mostly flat, easy pace", "Good chance of birds and howler monkeys"]
+          "icon": "☕",
+          "name": "Sloffee Caffee",
+          "mapLink": "https://www.google.com/maps/search/?api=1&query=Sloffee+Caffee+La+Fortuna+Costa+Rica",
+          "time": "Break",
+          "desc": "Coffee break in La Fortuna."
+        },
+        {
+          "type": "venue",
+          "icon": "💦",
+          "name": "La Fortuna Waterfall Trail",
+          "link": "https://www.alltrails.com/trail/costa-rica/alajuela/catarata-rio-fortuna",
+          "time": "Activity",
+          "desc": "Short out-and-back (0.5 mi) to a 70m waterfall with a swimming area at the bottom — the only catch is ~500 steps down and back up, so it's brief but not flat.",
+          "highlights": ["$18 entrance", "Swimming spot at the base", "Go early to beat the crowds and heat"]
+        },
+        {
+          "type": "venue",
+          "icon": "♨️",
+          "name": "Eco Termales Fortuna + Dinner",
+          "mapLink": "https://www.google.com/maps/search/?api=1&query=Eco+Termales+Fortuna+Costa+Rica",
+          "time": "Evening",
+          "desc": "Hot springs visit and dinner at Eco Termales Fortuna."
         }
       ],
-      "note": "💡 Nothing booked yet. All three trails below are easy/beginner-friendly (AllTrails links attached) — the waterfall has stairs but is short, and Arenal 1968 + the national park trails are flat.",
-      "aiSuggestions": [
-        "Sunset over Lake Arenal from the Arenal Dam road is a quick, free detour on the way back into town.",
-        "Cap the day with a casual dinner at Soda La Parada or Lava Lounge, both popular with the after-hike crowd."
-      ]
+      "note": "💡 Nothing booked yet. Confirm availability, entrance details, and dinner timing for Eco Termales Fortuna."
     },
     {
       "date": "2026-09-22",
       "dayNumber": "Day 4",
       "destinationId": "la-fortuna",
       "title": "Day 4 — Explore the Arenal Area",
-      "theme": "Mistico Hanging Bridges in the morning, hot springs in the afternoon.",
+      "theme": "Safari float first, followed by Mistico Hanging Bridges in the afternoon.",
       "items": [
+        {
+          "type": "venue",
+          "icon": "🛶",
+          "name": "Safari Float",
+          "link": "https://canoa-aventura.com/safari-float-river-tour-in-la-fortuna/",
+          "time": "Start of day",
+          "desc": "Safari float river tour in La Fortuna."
+        },
         {
           "type": "venue",
           "icon": "🌉",
           "name": "Mistico Arenal Hanging Bridges Park — Guided Natural History Walk",
           "link": "https://misticopark.com/tours/natural-history-walk/",
           "mapLink": "https://www.google.com/maps/search/?api=1&query=Mistico+Park+La+Fortuna+Costa+Rica",
-          "time": "~2.5h",
+          "time": "Afternoon",
           "desc": "Official park-run guided tour with a certified naturalist guide across 3.2km of ground trails and hanging bridges over the rainforest canopy. The park's own site only lists this as a shared-group tour, not a separately-priced private one — call or WhatsApp ahead to ask about arranging an exclusive/private guide for the group.",
           "highlights": [
             "Company: Mistico Park (official, family-owned reserve)",
@@ -208,43 +200,35 @@
             "Shared tour from $44 + tax/person · English departures 7 AM–2 PM",
             "Third-party resellers list a Mistico \"private tour\" (private hotel transport + private bilingual guide) around $99/adult, $49/child 4–11, 4–4.5h — not on Mistico's own site, so confirm directly by phone before counting on it."
           ]
-        },
-        {
-          "type": "venue",
-          "icon": "🚐",
-          "name": "Desafio Adventure Company — Private Arenal Combo (Volcano + Hanging Bridges + Waterfall)",
-          "link": "https://www.desafiocostarica.com/tour-detail/arenal-highlights-combo-volcano-hike-waterfall-hanging-bridges-private",
-          "mapLink": "https://www.google.com/maps/search/?api=1&query=Desafio+Adventure+Company+La+Fortuna+Costa+Rica",
-          "time": "Full day",
-          "desc": "La Fortuna-based adventure operator (running since 1993) offering a private, exclusive-to-your-group version of their Arenal Volcano + Hanging Bridges + La Fortuna Waterfall combo — an alternative to Mistico if a guaranteed private tour matters more than doing Mistico specifically.",
-          "highlights": [
-            "Company: Desafio Adventure Company",
-            "Phone: +506 2479-0020",
-            "Email: reservations@desafiocostarica.com",
-            "Website: desafiocostarica.com",
-            "Shared version of this combo starts at $175 + VAT/person — ask for the private tour's price directly"
-          ]
         }
       ],
-      "note": "💡 Nothing booked yet — plan: Mistico Arenal Hanging Bridges Park (2–3h, morning), hot springs (afternoon). Two private-tour routes to consider: ask Mistico directly about a private guide, or book a private combo through Desafio Adventure Company — see options below.",
-      "aiSuggestions": [
-        "Go early to Mistico (gates open ~6 AM, first English tour 7 AM) — cooler temps and better odds of spotting sloths and birds before tour buses arrive.",
-        "If the group wants a change from Tabacón/Eco Termales, Baldi Hot Springs has more pools and a livelier, resort-style feel.",
-        "Chocolate tour add-on near La Fortuna is an easy, short activity to slot in if there's a gap between bridges and springs."
-      ]
+      "note": "💡 Nothing booked yet — plan: Mistico Arenal Hanging Bridges Park (2–3h, morning), hot springs (afternoon). Ask Mistico directly about arranging a private guide if needed."
     },
     {
       "date": "2026-09-23",
       "dayNumber": "Day 5",
       "destinationId": "la-fortuna",
       "title": "Day 5 — Last Day in La Fortuna",
-      "theme": "Ziplining/canyoning in the morning, a night tour to close out La Fortuna.",
-      "note": "💡 Nothing booked yet — plan: ziplining and waterfall rappelling (canyoning) adventure (morning), night tour or floating night tour (evening).",
-      "aiSuggestions": [
-        "If canyoning feels like too much after a week of activity, Arenal has gentler alternatives — a Class II–III rafting float on the Balsa River, or an ATV/buggy tour through farmland with volcano views.",
-        "Leave a window before the night tour to browse the La Fortuna town square and souvenir shops.",
-        "Pack out early for the drive to Puerto Viejo tomorrow — an early wind-down tonight makes the ~5-6h transit easier."
-      ]
+      "theme": "Ziplining at Parque Arenal Mundo Aventura.",
+      "items": [
+        {
+          "type": "venue",
+          "icon": "🪂",
+          "name": "Parque Arenal Mundo Aventura — Zipline",
+          "link": "https://www.arenalmundoaventura.com",
+          "desc": "Zipline adventure at Parque Arenal Mundo Aventura.",
+          "highlights": ["Website: ArenalMundoAventura.com"]
+        },
+        {
+          "type": "venue",
+          "icon": "🍽️",
+          "name": "Fortunaeno",
+          "mapLink": "https://www.google.com/maps/search/?api=1&query=Fortunaeno+La+Fortuna+Costa+Rica",
+          "time": "Dinner",
+          "desc": "Dinner at Fortunaeno in La Fortuna."
+        }
+      ],
+      "note": "💡 Confirm the zipline schedule and booking details directly with Parque Arenal Mundo Aventura. Dinner at Fortunaeno."
     },
     {
       "date": "2026-09-24",
@@ -252,16 +236,13 @@
       "destinationId": "puerto-viejo",
       "title": "Day 6 — Drive to the Caribbean Coast",
       "theme": "Transit day from Arenal to Puerto Viejo.",
+      "mapLink": "https://www.google.com/maps/dir/?api=1&origin=10.4708,-84.6413&destination=9.6555,-82.7554&travelmode=driving",
       "items": [
         { "type": "event", "time": "11:00 AM", "icon": "🚪", "text": "Check out of Fortuna Retreat" },
         { "type": "drive", "route": "La Fortuna → Puerto Viejo", "duration": "~5-6h" },
         { "type": "event", "time": "3:00 PM", "icon": "🏡", "text": "Check into Cariblue Beach and Jungle Resort", "link": { "href": "#accommodation", "text": "Cariblue" } }
       ],
-      "note": "💡 5–6 hours transit. Monitor Route 32 via Waze. Evening in Puerto Viejo — dinner at Koki Beach Restaurant.",
-      "aiSuggestions": [
-        "A stop at the Sloth Sanctuary or a roadside soda near Guápiles breaks up the long Route 32 drive.",
-        "After dinner, Puerto Viejo's small downtown strip has a relaxed bar/live-music scene if anyone has energy left."
-      ]
+      "note": "💡 5–6 hours transit. Monitor Route 32 via Waze. Evening in Puerto Viejo — dinner at Koki Beach Restaurant."
     },
     {
       "date": "2026-09-25",
@@ -307,16 +288,28 @@
       "dayNumber": "Day 10",
       "destinationId": "puerto-viejo",
       "title": "Day 10 — Travel Toward Tortuguero",
-      "theme": "Group drives to La Pavona; Yoav splits off toward San José.",
+      "theme": "Group drives from Puerto Viejo to Río Sarapiquí; Yoav splits off toward San José.",
+      "mapLink": "https://www.google.com/maps/dir/?api=1&origin=Puerto+Viejo%2C+Costa+Rica&destination=Tirimbina+Rainforest+Lodge%2C+Sarapiqui%2C+Costa+Rica&travelmode=driving",
       "items": [
         { "type": "event", "time": "7:00 AM", "icon": "🚪", "text": "Check out of Cariblue Beach and Jungle Resort" },
-        { "type": "drive", "route": "Puerto Viejo → La Pavona", "duration": "~3.5-4.5h" }
+        {
+          "type": "venue",
+          "icon": "🚣",
+          "name": "Explordors Outdoors Exploration Center — Rafting",
+          "link": "https://www.explordorsoutdoors.com",
+          "desc": "Rafting activity with Explordors Outdoors Exploration Center."
+        },
+        { "type": "drive", "route": "Puerto Viejo → Río Sarapiquí", "duration": "~3.5-4.5h" },
+        {
+          "type": "venue",
+          "icon": "🌿",
+          "name": "Tirimbina Rainforest Lodge — Río Sarapiquí",
+          "link": "https://www.tirimbina.org/",
+          "desc": "Rainforest lodge in the Río Sarapiquí area.",
+          "highlights": ["Official website: tirimbina.org"]
+        }
       ],
-      "note": "💡 TODO: no lodging is booked for the night of Sep 28 — Mawamba Lodge check-in isn't until Tue Sep 29 at 12:30 PM, so there's an unaccounted night near La Pavona/Guápiles that still needs a place to stay. Group: drive to La Pavona (3.5–4.5h), park the car, take the boat over. Optional: Jaguar Rescue Center — but the 7:00 AM departure may not leave time; confirm before counting on it. Yoav: 6:00 AM shuttle from Puerto Viejo direct to SJO Airport (book at caribeshuttle.com/puerto-viejo-cahuita-to-san-jose), arriving before 4:00 PM, then flies home via Frankfurt the next evening (Lufthansa LH 519, confirmation Y8NN9R) — TODO: no lodging is booked yet for Yoav's night in San José (Sep 28–29) before that flight.",
-      "aiSuggestions": [
-        "If the Jaguar Rescue Center stop doesn't fit before the boat, a quick coffee/snack break in Guápiles is a reasonable substitute on the La Pavona drive.",
-        "Pack a dry bag or waterproof cover for electronics — the boat crossing to Tortuguero can get splashy, and there may be rain."
-      ]
+      "note": "💡 Group: drive from Puerto Viejo to the Río Sarapiquí lodge. Yoav takes the 6:00 AM shuttle from Puerto Viejo direct to SJO Airport, arriving before 4:00 PM, then flies home via Frankfurt the next evening."
     },
     {
       "date": "2026-09-29",
@@ -531,6 +524,15 @@
         "Reception closed 8:00 PM–5:30 AM; check-in not possible outside those hours.",
         "Free cancellation until Sep 21, 2026 11:59 PM (7 days before arrival)."
       ]
+    }
+  ],
+  "activities": [
+    {
+      "id": "la-fortuna-frogs-reptiles-night-tour",
+      "name": "La Fortuna Frogs and Reptiles Wildlife Night Tour",
+      "icon": "🐸",
+      "duration": "2 hrs",
+      "notes": ["Location: near The Oasis Butterfly Dome / Oasis Resort."]
     }
   ],
   "travelers": [
