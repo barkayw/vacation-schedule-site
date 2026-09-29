@@ -170,7 +170,7 @@
       "date": "2026-09-22",
       "dayNumber": "Day 4",
       "destinationId": "la-fortuna",
-      "title": "Day 4 — Explore the Arenal Area",
+      "title": "Day 4 — Safari Float and Mistico Hanging Bridges",
       "theme": "Safari float first, followed by Mistico Hanging Bridges in the afternoon.",
       "items": [
         {
@@ -244,7 +244,7 @@
       "date": "2026-09-25",
       "dayNumber": "Day 7",
       "destinationId": "puerto-viejo",
-      "title": "Day 7 — Caribbean Coast",
+      "title": "Day 7 — Cahuita National Park and Playa Blanca",
       "theme": "Cahuita National Park in the morning, Playa Blanca in the afternoon.",
       "items": [
         {
@@ -267,7 +267,7 @@
       "date": "2026-09-26",
       "dayNumber": "Day 8",
       "destinationId": "puerto-viejo",
-      "title": "Day 8 — Caribbean Coast",
+      "title": "Day 8 — Manzanillo–Punta Mona Trail and Punta Uva",
       "theme": "Coffee & chocolate tour in the morning, Punta Uva in the afternoon.",
       "items": [
         {
@@ -290,7 +290,7 @@
       "date": "2026-09-27",
       "dayNumber": "Day 9",
       "destinationId": "puerto-viejo",
-      "title": "Day 9 — Caribbean Coast",
+      "title": "Day 9 — Ara Manzanillo and the Caribbean Coast",
       "theme": "Visit Ara Manzanillo, the Great Green Macaw reintroduction station, then explore Punta Uva and Manzanillo.",
       "items": [
         {
@@ -313,7 +313,7 @@
       "date": "2026-09-28",
       "dayNumber": "Day 10",
       "destinationId": "puerto-viejo",
-      "title": "Day 10 — Travel Toward Tortuguero",
+      "title": "Day 10 — Drive to Río Sarapiquí",
       "theme": "Group drives from Puerto Viejo to Río Sarapiquí; Yoav splits off toward San José.",
       "mapLink": "https://www.google.com/maps/dir/?api=1&origin=Puerto+Viejo%2C+Costa+Rica&destination=Tirimbina+Rainforest+Lodge%2C+Sarapiqui%2C+Costa+Rica&travelmode=driving",
       "items": [
@@ -321,9 +321,16 @@
         {
           "type": "venue",
           "icon": "🚣",
-          "name": "Explordors Outdoors Exploration Center — Rafting",
-          "link": "https://www.explordorsoutdoors.com",
-          "desc": "Rafting activity with Explordors Outdoors Exploration Center."
+          "name": "Pacuare River Rafting — Exploradores Outdoors",
+          "link": "https://exploradoresoutdoors.com/tours/pacuare-1-day/",
+          "desc": "An 18-mile, one-day whitewater journey through the Pacuare River's lush rainforest gorge. The route combines exciting rapids with dramatic scenery, waterfalls, and opportunities to spot tropical wildlife.",
+          "highlights": [
+            "52 rapids across the full-day run.",
+            "The opening section features Class II–III rapids, followed by the famous Pacuare Gorge.",
+            "Look for Huacas Waterfall, a dramatic 150-foot cascade into the river.",
+            "Possible wildlife sightings include sloths, toucans, parrots, coatis, morpho butterflies, and colorful frogs.",
+            "Official tour details: exploradoresoutdoors.com"
+          ]
         },
         { "type": "drive", "route": "Puerto Viejo → Río Sarapiquí", "duration": "~3.5-4.5h" },
         {
