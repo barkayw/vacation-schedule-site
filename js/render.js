@@ -272,10 +272,6 @@ function renderDayBlock(trip, day) {
     ${day.mapLink ? `<a href="${attr(day.mapLink)}" target="_blank" class="day-map-link">🗺️ View driving route on Google Maps</a>` : ''}
     ${items}
     ${day.note ? `<div class="day-note">${esc(day.note)}</div>` : ''}
-    ${day.aiSuggestions && day.aiSuggestions.length ? `<div class="day-ai-suggestions">
-      <div class="day-ai-suggestions-title">✨ AI Suggestions</div>
-      <ul>${day.aiSuggestions.map((s) => `<li>${esc(s)}</li>`).join('')}</ul>
-    </div>` : ''}
   </div>`;
 }
 

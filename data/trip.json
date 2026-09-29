@@ -87,11 +87,7 @@
         { "type": "event", "time": "2:00 PM", "icon": "🏨", "text": "Check into Hampton by Hilton San José Airport", "link": { "href": "#accommodation", "text": "Hampton by Hilton" } },
         { "type": "event", "time": "5:35 PM", "icon": "✈️", "text": "Yoav arrives separately: Frankfurt (FRA) → San José (SJO) · LH 518", "link": { "href": "#flights", "text": "LH 518" } }
       ],
-      "note": "💡 Stay close to SJO Airport to avoid city traffic.",
-      "aiSuggestions": [
-        "Grab an early dinner at a soda (local diner) near the hotel — casado or arroz con pollo is a good first-night intro to Costa Rican food.",
-        "If Yoav's evening flight lands on time, a quick hotel-lobby coffee catch-up beats waiting until the drive north."
-      ]
+        "note": "💡 Stay close to SJO Airport to avoid city traffic."
     },
     {
       "date": "2026-09-20",
@@ -250,12 +246,22 @@
       "destinationId": "puerto-viejo",
       "title": "Day 7 — Caribbean Coast",
       "theme": "Cahuita National Park in the morning, Playa Blanca in the afternoon.",
-      "note": "💡 Nothing booked yet — plan: Cahuita National Park coastal trail (~5mi/8km, morning), relax at Playa Blanca (afternoon).",
-      "aiSuggestions": [
-        "Cahuita's reef is one of the better snorkeling spots on this coast — a local guide can arrange a short boat snorkel trip after the trail.",
-        "Cahuita town itself has good, casual Caribbean-style lunch spots (rice and beans, fresh fish) if the group wants a change from resort dining.",
-        "The coastal trail has no shade for stretches — bring water and sun protection, and start before midday heat sets in."
-      ]
+      "items": [
+        {
+          "type": "venue",
+          "icon": "🌿",
+          "name": "Cahuita National Park",
+          "mapLink": "https://www.google.com/maps/search/?api=1&query=Cahuita+National+Park+Costa+Rica",
+          "time": "Morning",
+          "desc": "A scenic Caribbean coastal park with an easy-to-moderate rainforest trail winding past palm-fringed beaches, coral reefs, and mangroves. Watch for sloths, monkeys, raccoons, tropical birds, and other wildlife along the way.",
+          "highlights": [
+            "Coastal trail: approximately 5 miles / 8 km.",
+            "Bring water, insect repellent, and sun protection.",
+            "The trail can be muddy after rain; swimming and snorkeling conditions vary."
+          ]
+        }
+      ],
+      "note": "💡 Walk the Cahuita National Park coastal trail in the morning, then relax at Playa Blanca in the afternoon."
     },
     {
       "date": "2026-09-26",
@@ -263,25 +269,45 @@
       "destinationId": "puerto-viejo",
       "title": "Day 8 — Caribbean Coast",
       "theme": "Coffee & chocolate tour in the morning, Punta Uva in the afternoon.",
-      "note": "💡 Nothing booked yet — plan: Coffee & Chocolate Tour (optional Bribri Indigenous chocolate/cacao experience, morning), relax at Punta Uva (afternoon).",
-      "aiSuggestions": [
-        "The Jaguar Rescue Center (near Cariblue) offers guided visits and pairs well with a Punta Uva afternoon — worth booking a morning slot ahead.",
-        "Punta Uva has calmer, more swimmable water than most of this coast — good if anyone wants a lower-key beach afternoon.",
-        "Horseback riding along the beach near Punta Uva/Manzanillo is a popular half-day add-on if there's an open afternoon."
-      ]
+      "items": [
+        {
+          "type": "venue",
+          "icon": "🥾",
+          "name": "Manzanillo–Punta Mona Coastal Trail",
+          "mapLink": "https://www.google.com/maps/search/?api=1&query=Manzanillo+Punta+Mona+Coastal+Trail+Costa+Rica",
+          "time": "Activity",
+          "desc": "A beautiful coastal hike through tropical rainforest and the Gandoca-Manzanillo Wildlife Refuge, with quiet beaches, jungle scenery, and opportunities to spot monkeys, birds, and other wildlife.",
+          "highlights": [
+            "Bring water, sun protection, and sturdy walking shoes.",
+            "Trail conditions can be muddy or slippery after rain.",
+            "Check local access and tide conditions before setting out."
+          ]
+        }
+      ],
+      "note": "💡 Walk the Manzanillo–Punta Mona coastal trail through rainforest and wildlife habitat, then relax at Punta Uva in the afternoon."
     },
     {
       "date": "2026-09-27",
       "dayNumber": "Day 9",
       "destinationId": "puerto-viejo",
       "title": "Day 9 — Caribbean Coast",
-      "theme": "Beach-hopping to Punta Uva and Manzanillo, plus the wildlife refuge.",
-      "note": "💡 Nothing booked yet — plan: beach-hopping to Punta Uva and Manzanillo, Manzanillo Wildlife Refuge.",
-      "aiSuggestions": [
-        "Snorkeling or a guided dive off Manzanillo is worth arranging locally — the reef here is one of the better ones on the Caribbean coast.",
-        "The Manzanillo–Punta Mona coastal trail is a good option for anyone wanting a longer hike through the refuge instead of pure beach time.",
-        "This is the last full day in Puerto Viejo — a sunset dinner at a beachfront spot like Le Cameleon or Refugio Grill is a nice way to close it out."
-      ]
+      "theme": "Visit Ara Manzanillo, the Great Green Macaw reintroduction station, then explore Punta Uva and Manzanillo.",
+      "items": [
+        {
+          "type": "venue",
+          "icon": "🦜",
+          "name": "Ara Manzanillo — Great Green Macaw Reintroduction Station",
+          "link": "https://aramanzanillo.org/book-now/",
+          "mapLink": "https://www.google.com/maps/search/?api=1&query=Ara+Manzanillo+Costa+Rica",
+          "time": "Activity",
+          "desc": "A tropical-rainforest conservation project where visitors learn about the reintroduction of the Great Green Macaw and the work helping rebuild its wild population.",
+          "highlights": [
+            "Official booking: aramanzanillo.org",
+            "Location: Manzanillo, Limón"
+          ]
+        }
+      ],
+        "note": "💡 Visit Ara Manzanillo to learn about the Great Green Macaw reintroduction program, then continue to Punta Uva and Manzanillo for beaches and coastal wildlife."
     },
     {
       "date": "2026-09-28",
@@ -320,11 +346,7 @@
       "items": [
         { "type": "event", "time": "12:30 PM", "icon": "🛶", "text": "Check into Mawamba Lodge (boat or plane access only)", "link": { "href": "#accommodation", "text": "Mawamba Lodge" } }
       ],
-      "note": "💡 No public or private boats leave La Pavona dock after 4:00 PM — call the lodge before starting transit. Reception is closed 8:00 PM–5:30 AM. Yoav flies home separately tonight: San José (SJO) → Frankfurt (FRA), 7:25 PM · LH 519.",
-      "aiSuggestions": [
-        "Ask Mawamba Lodge about an included or add-on afternoon canal tour on arrival day — a good way to spot wildlife before the main full-day tour tomorrow.",
-        "A guided night walk near the lodge is worth asking about — frogs, insects, and nocturnal wildlife are active after dark in Tortuguero."
-      ]
+      "note": "💡 No public or private boats leave La Pavona dock after 4:00 PM — call the lodge before starting transit. Reception is closed 8:00 PM–5:30 AM. Yoav flies home separately tonight: San José (SJO) → Frankfurt (FRA), 7:25 PM · LH 519."
     },
     {
       "date": "2026-09-30",
@@ -332,12 +354,7 @@
       "destinationId": "tortuguero",
       "title": "Day 12 — Tortuguero National Park",
       "theme": "Full day for a morning canoe canal tour and wildlife spotting.",
-      "note": "💡 Nothing booked yet — plan is a morning canoe canal tour.",
-      "aiSuggestions": [
-        "Tortuguero village (a short boat ride from most lodges) has the Sea Turtle Conservancy museum — good low-key option for the afternoon after the canal tour.",
-        "Lodges here typically have their own trails and gardens (frogs, butterflies) — worth a self-guided walk if the group wants downtime before dinner.",
-        "September–October is green turtle nesting season here — ask the lodge about an evening turtle-watching walk if available."
-      ]
+      "note": "💡 Nothing booked yet — plan is a morning canoe canal tour."
     },
     {
       "date": "2026-10-01",
@@ -348,12 +365,7 @@
       "items": [
         { "type": "event", "time": "5:30 AM", "icon": "🚪", "text": "Check out of Mawamba Lodge" }
       ],
-      "note": "💡 TODO: no lodging is booked for the night of Oct 1 in San José, ahead of the next day's flight. Take the early morning boat out of Tortuguero, pick up the car at La Pavona, and drive back via Route 32 before sunset.",
-      "aiSuggestions": [
-        "If the drive back finishes with daylight to spare, La Paz Waterfall Gardens is a short detour off Route 32 for a last nature stop before the city.",
-        "Look for a hotel near San José/SJO for the last night rather than downtown — keeps tomorrow's early departure-day logistics simple.",
-        "A relaxed dinner near the hotel tonight beats a late one — it's an early flight-prep day tomorrow."
-      ]
+      "note": "💡 TODO: no lodging is booked for the night of Oct 1 in San José, ahead of the next day's flight. Take the early morning boat out of Tortuguero, pick up the car at La Pavona, and drive back via Route 32 before sunset."
     },
     {
       "date": "2026-10-02",
@@ -364,11 +376,7 @@
         { "type": "event", "time": "12:44 PM", "icon": "✈️", "text": "Depart San José (SJO) → Newark (EWR) · UA 1560", "link": { "href": "#flights", "text": "UA 1560" } },
         { "type": "event", "time": "8:00 PM", "icon": "🛬", "text": "Arrive Newark (EWR) 🏠" }
       ],
-      "note": "💡 Flight at 12:00 PM — head straight to the airport and arrive by 9:00 AM.",
-      "aiSuggestions": [
-        "Grab breakfast near the hotel/airport rather than at SJO — options inside security are limited before an international flight.",
-        "Return any rental car with a full tank early — the SJO rental return area can be slow during morning turnover."
-      ]
+      "note": "💡 Flight at 12:00 PM — head straight to the airport and arrive by 9:00 AM."
     }
   ],
   "flights": [
