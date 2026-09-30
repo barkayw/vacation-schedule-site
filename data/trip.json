@@ -10,7 +10,10 @@
     "emojiRow": "🌋 🐢 🏝️ 🌴",
     "startDate": "2026-09-19",
     "endDate": "2026-10-02",
-    "homeBase": { "code": "EWR", "city": "Newark, NJ" },
+    "homeBase": {
+      "code": "EWR",
+      "city": "Newark, NJ"
+    },
     "currency": "USD",
     "countdownTarget": "2026-09-19T08:24:00-04:00"
   },
@@ -23,7 +26,10 @@
       "arrivalDate": "2026-09-19",
       "departureDate": "2026-09-20",
       "lodgingId": "hampton-sjo",
-      "coordinates": { "lat": 9.9281, "lng": -84.0907 },
+      "coordinates": {
+        "lat": 9.9281,
+        "lng": -84.0907
+      },
       "mapDescription": "Sep 19–20 · Arrival"
     },
     {
@@ -34,9 +40,15 @@
       "arrivalDate": "2026-09-20",
       "departureDate": "2026-09-24",
       "lodgingId": "fortuna-retreat",
-      "coordinates": { "lat": 10.4708, "lng": -84.6413 },
+      "coordinates": {
+        "lat": 10.4708,
+        "lng": -84.6413
+      },
       "mapDescription": "Sep 20–24 · Arenal Volcano",
-      "driveFromPrevious": { "durationLabel": "~4h", "icon": "🚗" }
+      "driveFromPrevious": {
+        "durationLabel": "~4h",
+        "icon": "🚗"
+      }
     },
     {
       "id": "puerto-viejo",
@@ -46,9 +58,15 @@
       "arrivalDate": "2026-09-24",
       "departureDate": "2026-09-28",
       "lodgingId": "cariblue",
-      "coordinates": { "lat": 9.6555, "lng": -82.7554 },
+      "coordinates": {
+        "lat": 9.6555,
+        "lng": -82.7554
+      },
       "mapDescription": "Sep 24–28 · Caribbean Coast",
-      "driveFromPrevious": { "durationLabel": "~5-6h", "icon": "🚗" }
+      "driveFromPrevious": {
+        "durationLabel": "~5-6h",
+        "icon": "🚗"
+      }
     },
     {
       "id": "tortuguero",
@@ -58,9 +76,15 @@
       "arrivalDate": "2026-09-29",
       "departureDate": "2026-10-01",
       "lodgingId": "mawamba-lodge",
-      "coordinates": { "lat": 10.5433, "lng": -83.5040 },
+      "coordinates": {
+        "lat": 10.5433,
+        "lng": -83.504
+      },
       "mapDescription": "Sep 29 – Oct 1 · Tortuguero National Park",
-      "driveFromPrevious": { "durationLabel": "~4h + boat", "icon": "🚤" }
+      "driveFromPrevious": {
+        "durationLabel": "~4h + boat",
+        "icon": "🚤"
+      }
     },
     {
       "id": "san-jose-return",
@@ -69,9 +93,15 @@
       "emoji": "🏙️",
       "arrivalDate": "2026-10-01",
       "departureDate": "2026-10-02",
-      "coordinates": { "lat": 9.9281, "lng": -84.0907 },
+      "coordinates": {
+        "lat": 9.9281,
+        "lng": -84.0907
+      },
       "mapDescription": "Oct 1–2 · Return & Flight Home",
-      "driveFromPrevious": { "durationLabel": "~4h + boat", "icon": "🚤" }
+      "driveFromPrevious": {
+        "durationLabel": "~4h + boat",
+        "icon": "🚤"
+      }
     }
   ],
   "days": [
@@ -82,12 +112,44 @@
       "title": "Day 1 — Arrival",
       "theme": "Land in San José and settle in for the night.",
       "items": [
-        { "type": "event", "time": "8:24 AM", "icon": "✈️", "text": "Depart Newark (EWR) → San José (SJO) · UA 1080", "link": { "href": "#flights", "text": "UA 1080" } },
-        { "type": "event", "time": "11:38 AM", "icon": "🛬", "text": "Arrive San José (SJO)" },
-        { "type": "event", "time": "2:00 PM", "icon": "🏨", "text": "Check into Hampton by Hilton San José Airport", "link": { "href": "#accommodation", "text": "Hampton by Hilton" } },
-        { "type": "event", "time": "5:35 PM", "icon": "✈️", "text": "Yoav arrives separately: Frankfurt (FRA) → San José (SJO) · LH 518", "link": { "href": "#flights", "text": "LH 518" } }
+        {
+          "type": "event",
+          "time": "8:24 AM",
+          "icon": "✈️",
+          "text": "Depart Newark (EWR) → San José (SJO) · UA 1080",
+          "link": {
+            "href": "#flights",
+            "text": "UA 1080"
+          }
+        },
+        {
+          "type": "event",
+          "time": "11:38 AM",
+          "icon": "🛬",
+          "text": "Arrive San José (SJO)"
+        },
+        {
+          "type": "event",
+          "time": "2:00 PM",
+          "icon": "🏨",
+          "text": "Check into Hampton by Hilton San José Airport",
+          "link": {
+            "href": "#accommodation",
+            "text": "Hampton by Hilton"
+          }
+        },
+        {
+          "type": "event",
+          "time": "5:35 PM",
+          "icon": "✈️",
+          "text": "Yoav arrives separately: Frankfurt (FRA) → San José (SJO) · LH 518",
+          "link": {
+            "href": "#flights",
+            "text": "LH 518"
+          }
+        }
       ],
-        "note": "💡 Stay close to SJO Airport to avoid city traffic."
+      "note": "💡 Stay close to SJO Airport to avoid city traffic."
     },
     {
       "date": "2026-09-20",
@@ -97,13 +159,47 @@
       "theme": "Drive north from San José through Sarchí and Zarcero before arriving in La Fortuna.",
       "mapLink": "https://www.google.com/maps/dir/?api=1&origin=9.9281,-84.0907&destination=10.4708,-84.6413&waypoints=10.0898,-84.3476%7C10.1845,-84.3917&travelmode=driving",
       "items": [
-        { "type": "event", "time": "9:00 AM", "icon": "🚪", "text": "Check out of Hampton by Hilton San José Airport" },
-        { "type": "drive", "route": "San José → Sarchí", "duration": "~1h" },
-        { "type": "event", "icon": "🎨", "text": "Stop in Sarchí" },
-        { "type": "drive", "route": "Sarchí → Zarcero", "duration": "~40 min" },
-        { "type": "event", "icon": "🌳", "text": "Stop in Zarcero" },
-        { "type": "drive", "route": "Zarcero → La Fortuna", "duration": "~1.5h" },
-        { "type": "event", "time": "4:30 PM", "icon": "🏡", "text": "Check into Fortuna Retreat", "link": { "href": "#accommodation", "text": "Fortuna Retreat" } },
+        {
+          "type": "event",
+          "time": "9:00 AM",
+          "icon": "🚪",
+          "text": "Check out of Hampton by Hilton San José Airport"
+        },
+        {
+          "type": "drive",
+          "route": "San José → Sarchí",
+          "duration": "~1h"
+        },
+        {
+          "type": "event",
+          "icon": "🎨",
+          "text": "Stop in Sarchí"
+        },
+        {
+          "type": "drive",
+          "route": "Sarchí → Zarcero",
+          "duration": "~40 min"
+        },
+        {
+          "type": "event",
+          "icon": "🌳",
+          "text": "Stop in Zarcero"
+        },
+        {
+          "type": "drive",
+          "route": "Zarcero → La Fortuna",
+          "duration": "~1.5h"
+        },
+        {
+          "type": "event",
+          "time": "4:30 PM",
+          "icon": "🏡",
+          "text": "Check into Fortuna Retreat",
+          "link": {
+            "href": "#accommodation",
+            "text": "Fortuna Retreat"
+          }
+        },
         {
           "type": "venue",
           "icon": "🍽️",
@@ -136,7 +232,11 @@
           "link": "https://www.alltrails.com/poi/costa-rica/alajuela/san-carlos/arenal-1968-volcano-view-and-lava-trails",
           "time": "Start of day",
           "desc": "A genuinely flat, beginner-friendly 1.7km loop through the 1968 lava fields with open views of the volcano and Lake Arenal.",
-          "highlights": ["$27 entrance", "Flat, easy walking", "Great volcano/lake photo spots"]
+          "highlights": [
+            "$27 entrance",
+            "Flat, easy walking",
+            "Great volcano/lake photo spots"
+          ]
         },
         {
           "type": "venue",
@@ -153,7 +253,11 @@
           "link": "https://www.alltrails.com/trail/costa-rica/alajuela/catarata-rio-fortuna",
           "time": "Activity",
           "desc": "Short out-and-back (0.5 mi) to a 70m waterfall with a swimming area at the bottom — the only catch is ~500 steps down and back up, so it's brief but not flat.",
-          "highlights": ["$18 entrance", "Swimming spot at the base", "Go early to beat the crowds and heat"]
+          "highlights": [
+            "$18 entrance",
+            "Swimming spot at the base",
+            "Go early to beat the crowds and heat"
+          ]
         },
         {
           "type": "venue",
@@ -213,7 +317,9 @@
           "name": "Parque Arenal Mundo Aventura — Zipline",
           "link": "https://www.arenalmundoaventura.com",
           "desc": "Zipline adventure at Parque Arenal Mundo Aventura.",
-          "highlights": ["Website: ArenalMundoAventura.com"]
+          "highlights": [
+            "Website: ArenalMundoAventura.com"
+          ]
         },
         {
           "type": "venue",
@@ -234,9 +340,27 @@
       "theme": "Transit day from Arenal to Puerto Viejo.",
       "mapLink": "https://www.google.com/maps/dir/?api=1&origin=10.4708,-84.6413&destination=9.6555,-82.7554&travelmode=driving",
       "items": [
-        { "type": "event", "time": "11:00 AM", "icon": "🚪", "text": "Check out of Fortuna Retreat" },
-        { "type": "drive", "route": "La Fortuna → Puerto Viejo", "duration": "~5-6h" },
-        { "type": "event", "time": "3:00 PM", "icon": "🏡", "text": "Check into Cariblue Beach and Jungle Resort", "link": { "href": "#accommodation", "text": "Cariblue" } }
+        {
+          "type": "event",
+          "time": "11:00 AM",
+          "icon": "🚪",
+          "text": "Check out of Fortuna Retreat"
+        },
+        {
+          "type": "drive",
+          "route": "La Fortuna → Puerto Viejo",
+          "duration": "~5-6h"
+        },
+        {
+          "type": "event",
+          "time": "3:00 PM",
+          "icon": "🏡",
+          "text": "Check into Cariblue Beach and Jungle Resort",
+          "link": {
+            "href": "#accommodation",
+            "text": "Cariblue"
+          }
+        }
       ],
       "note": "💡 5–6 hours transit. Monitor Route 32 via Waze. Evening in Puerto Viejo — dinner at Koki Beach Restaurant."
     },
@@ -307,7 +431,7 @@
           ]
         }
       ],
-        "note": "💡 Visit Ara Manzanillo to learn about the Great Green Macaw reintroduction program, then continue to Punta Uva and Manzanillo for beaches and coastal wildlife."
+      "note": "💡 Visit Ara Manzanillo to learn about the Great Green Macaw reintroduction program, then continue to Punta Uva and Manzanillo for beaches and coastal wildlife."
     },
     {
       "date": "2026-09-28",
@@ -317,7 +441,12 @@
       "theme": "Group drives from Puerto Viejo to Río Sarapiquí; Yoav splits off toward San José.",
       "mapLink": "https://www.google.com/maps/dir/?api=1&origin=Puerto+Viejo%2C+Costa+Rica&destination=Tirimbina+Rainforest+Lodge%2C+Sarapiqui%2C+Costa+Rica&travelmode=driving",
       "items": [
-        { "type": "event", "time": "7:00 AM", "icon": "🚪", "text": "Check out of Cariblue Beach and Jungle Resort" },
+        {
+          "type": "event",
+          "time": "7:00 AM",
+          "icon": "🚪",
+          "text": "Check out of Cariblue Beach and Jungle Resort"
+        },
         {
           "type": "venue",
           "icon": "🚣",
@@ -332,14 +461,20 @@
             "Official tour details: exploradoresoutdoors.com"
           ]
         },
-        { "type": "drive", "route": "Puerto Viejo → Río Sarapiquí", "duration": "~3.5-4.5h" },
+        {
+          "type": "drive",
+          "route": "Puerto Viejo → Río Sarapiquí",
+          "duration": "~3.5-4.5h"
+        },
         {
           "type": "venue",
           "icon": "🌿",
           "name": "Tirimbina Rainforest Lodge — Río Sarapiquí",
           "link": "https://www.tirimbina.org/",
           "desc": "Rainforest lodge in the Río Sarapiquí area.",
-          "highlights": ["Official website: tirimbina.org"]
+          "highlights": [
+            "Official website: tirimbina.org"
+          ]
         }
       ],
       "note": "💡 Group: drive from Puerto Viejo to the Río Sarapiquí lodge. Yoav takes the 6:00 AM shuttle from Puerto Viejo direct to SJO Airport, arriving before 4:00 PM, then flies home via Frankfurt the next evening."
@@ -351,7 +486,16 @@
       "title": "Day 11 — Boat to Tortuguero",
       "theme": "Boat in to Tortuguero and check into Mawamba Lodge.",
       "items": [
-        { "type": "event", "time": "12:30 PM", "icon": "🛶", "text": "Check into Mawamba Lodge (boat or plane access only)", "link": { "href": "#accommodation", "text": "Mawamba Lodge" } }
+        {
+          "type": "event",
+          "time": "12:30 PM",
+          "icon": "🛶",
+          "text": "Check into Mawamba Lodge (boat or plane access only)",
+          "link": {
+            "href": "#accommodation",
+            "text": "Mawamba Lodge"
+          }
+        }
       ],
       "note": "💡 No public or private boats leave La Pavona dock after 4:00 PM — call the lodge before starting transit. Reception is closed 8:00 PM–5:30 AM. Yoav flies home separately tonight: San José (SJO) → Frankfurt (FRA), 7:25 PM · LH 519."
     },
@@ -360,7 +504,7 @@
       "dayNumber": "Day 12",
       "destinationId": "tortuguero",
       "title": "Day 12 — Tortuguero National Park",
-      "theme": "Early-morning canoe tour through the Tortuguero National Park canals.",
+      "theme": "Early-morning canoe tour through the Tortuguero canals, and a night tour to see nesting sea turtles.",
       "items": [
         {
           "type": "venue",
@@ -369,6 +513,21 @@
           "mapLink": "https://www.google.com/maps/search/?api=1&query=Tortuguero+National+Park+Costa+Rica",
           "time": "6:00 AM",
           "desc": "A remote Caribbean rainforest park reachable only by boat or plane, laced with quiet canals and lagoons. Paddling at dawn is the best time to spot monkeys, sloths, caimans, river otters, toucans and herons — and its beach is one of the most important nesting sites for green sea turtles."
+        },
+        {
+          "type": "venue",
+          "icon": "🐢",
+          "name": "Nesting Turtle Night Tour",
+          "mapLink": "https://www.google.com/maps/search/?api=1&query=Tortuguero+Beach+Costa+Rica",
+          "time": "8:00 PM",
+          "desc": "Guided night walk from Mawamba Lodge to the Caribbean ocean-side beach to watch sea turtles come ashore to nest. Tortuguero is one of the world's most important green sea turtle nesting sites, and late September is still in season.",
+          "highlights": [
+            "Wear dark clothes and closed shoes.",
+            "No flash, phones or white lights on the beach — guides use red light only.",
+            "Stay quiet and keep behind the turtle.",
+            "Tours run about 2 hours with certified guides; sightings aren't guaranteed.",
+            "Bring insect repellent and a light rain jacket."
+          ]
         }
       ]
     },
@@ -379,7 +538,12 @@
       "title": "Day 13 — Return to the Capital",
       "theme": "Boat and drive back to San José ahead of the flight home.",
       "items": [
-        { "type": "event", "time": "5:30 AM", "icon": "🚪", "text": "Check out of Mawamba Lodge" }
+        {
+          "type": "event",
+          "time": "5:30 AM",
+          "icon": "🚪",
+          "text": "Check out of Mawamba Lodge"
+        }
       ],
       "note": "💡 TODO: no lodging is booked for the night of Oct 1 in San José, ahead of the next day's flight. Take the early morning boat out of Tortuguero, pick up the car at La Pavona, and drive back via Route 32 before sunset."
     },
@@ -389,8 +553,22 @@
       "destinationId": "san-jose-return",
       "title": "Day 14 — Departure",
       "items": [
-        { "type": "event", "time": "12:44 PM", "icon": "✈️", "text": "Depart San José (SJO) → Newark (EWR) · UA 1560", "link": { "href": "#flights", "text": "UA 1560" } },
-        { "type": "event", "time": "8:00 PM", "icon": "🛬", "text": "Arrive Newark (EWR) 🏠" }
+        {
+          "type": "event",
+          "time": "12:44 PM",
+          "icon": "✈️",
+          "text": "Depart San José (SJO) → Newark (EWR) · UA 1560",
+          "link": {
+            "href": "#flights",
+            "text": "UA 1560"
+          }
+        },
+        {
+          "type": "event",
+          "time": "8:00 PM",
+          "icon": "🛬",
+          "text": "Arrive Newark (EWR) 🏠"
+        }
       ],
       "note": "💡 Flight at 12:00 PM — head straight to the airport and arrive by 9:00 AM."
     }
@@ -401,8 +579,16 @@
       "date": "2026-09-19",
       "airline": "United Airlines",
       "flightNumber": "UA 1080",
-      "from": { "code": "EWR", "city": "Newark, NJ", "time": "8:24 AM" },
-      "to": { "code": "SJO", "city": "San José, CR", "time": "11:38 AM" },
+      "from": {
+        "code": "EWR",
+        "city": "Newark, NJ",
+        "time": "8:24 AM"
+      },
+      "to": {
+        "code": "SJO",
+        "city": "San José, CR",
+        "time": "11:38 AM"
+      },
       "duration": "5h 14m",
       "nonstop": true,
       "confirmation": "IGHJDR",
@@ -413,8 +599,16 @@
       "date": "2026-10-02",
       "airline": "United Airlines",
       "flightNumber": "UA 1560",
-      "from": { "code": "SJO", "city": "San José, CR", "time": "12:44 PM" },
-      "to": { "code": "EWR", "city": "Newark, NJ", "time": "8:00 PM" },
+      "from": {
+        "code": "SJO",
+        "city": "San José, CR",
+        "time": "12:44 PM"
+      },
+      "to": {
+        "code": "EWR",
+        "city": "Newark, NJ",
+        "time": "8:00 PM"
+      },
       "duration": "5h 16m",
       "nonstop": true,
       "confirmation": "IGHJDR",
@@ -425,16 +619,30 @@
       "date": "2026-09-19",
       "airline": "United Airlines",
       "flightNumber": "UA 1080",
-      "from": { "code": "EWR", "city": "Newark, NJ", "time": "8:24 AM" },
-      "to": { "code": "SJO", "city": "San José, CR", "time": "11:38 AM" },
+      "from": {
+        "code": "EWR",
+        "city": "Newark, NJ",
+        "time": "8:24 AM"
+      },
+      "to": {
+        "code": "SJO",
+        "city": "San José, CR",
+        "time": "11:38 AM"
+      },
       "nonstop": true,
       "confirmation": "JG51G5",
       "class": "United Economy (K)",
       "cost": "$1,012.78 total for Yaniv Raz & Maya Raz, round trip",
       "payment": "Master Card ending in 4627",
       "bagInfo": [
-        { "label": "1st Bag", "value": "$50.00" },
-        { "label": "2nd Bag", "value": "$60.00" }
+        {
+          "label": "1st Bag",
+          "value": "$50.00"
+        },
+        {
+          "label": "2nd Bag",
+          "value": "$60.00"
+        }
       ]
     },
     {
@@ -442,14 +650,28 @@
       "date": "2026-10-02",
       "airline": "United Airlines",
       "flightNumber": "UA 1560",
-      "from": { "code": "SJO", "city": "San José, CR", "time": "12:44 PM" },
-      "to": { "code": "EWR", "city": "Newark, NJ", "time": "8:01 PM" },
+      "from": {
+        "code": "SJO",
+        "city": "San José, CR",
+        "time": "12:44 PM"
+      },
+      "to": {
+        "code": "EWR",
+        "city": "Newark, NJ",
+        "time": "8:01 PM"
+      },
       "nonstop": true,
       "confirmation": "JG51G5",
       "class": "United Economy (G)",
       "bagInfo": [
-        { "label": "1st Bag", "value": "$50.00" },
-        { "label": "2nd Bag", "value": "$60.00" }
+        {
+          "label": "1st Bag",
+          "value": "$50.00"
+        },
+        {
+          "label": "2nd Bag",
+          "value": "$60.00"
+        }
       ]
     },
     {
@@ -457,8 +679,16 @@
       "date": "2026-09-19",
       "airline": "Lufthansa",
       "flightNumber": "LH 518",
-      "from": { "code": "FRA", "city": "Frankfurt, Germany", "time": "1:35 PM" },
-      "to": { "code": "SJO", "city": "San José, CR", "time": "5:35 PM" },
+      "from": {
+        "code": "FRA",
+        "city": "Frankfurt, Germany",
+        "time": "1:35 PM"
+      },
+      "to": {
+        "code": "SJO",
+        "city": "San José, CR",
+        "time": "5:35 PM"
+      },
       "duration": "12h 00m",
       "confirmation": "Y8NN9R"
     },
@@ -467,8 +697,16 @@
       "date": "2026-09-29",
       "airline": "Lufthansa",
       "flightNumber": "LH 519",
-      "from": { "code": "SJO", "city": "San José, CR", "time": "7:25 PM" },
-      "to": { "code": "FRA", "city": "Frankfurt, Germany", "time": "2:45 PM" },
+      "from": {
+        "code": "SJO",
+        "city": "San José, CR",
+        "time": "7:25 PM"
+      },
+      "to": {
+        "code": "FRA",
+        "city": "Frankfurt, Germany",
+        "time": "2:45 PM"
+      },
       "duration": "11h 20m",
       "confirmation": "Y8NN9R"
     }
@@ -556,14 +794,42 @@
       "name": "La Fortuna Frogs and Reptiles Wildlife Night Tour",
       "icon": "🐸",
       "duration": "2 hrs",
-      "notes": ["Location: near The Oasis Butterfly Dome / Oasis Resort."]
+      "notes": [
+        "Location: near The Oasis Butterfly Dome / Oasis Resort."
+      ]
     }
   ],
   "travelers": [
-    { "name": "Barkay Wolfsohn", "seats": { "outbound": "22F", "return": "22F" } },
-    { "name": "Shani Wolfsohn", "seats": { "outbound": "22D", "return": "22D" } },
-    { "name": "Yoav" },
-    { "name": "Yaniv Raz", "seats": { "outbound": "29A", "return": "30A" } },
-    { "name": "Maya Raz", "seats": { "outbound": "29C", "return": "30C" } }
+    {
+      "name": "Barkay Wolfsohn",
+      "seats": {
+        "outbound": "22F",
+        "return": "22F"
+      }
+    },
+    {
+      "name": "Shani Wolfsohn",
+      "seats": {
+        "outbound": "22D",
+        "return": "22D"
+      }
+    },
+    {
+      "name": "Yoav"
+    },
+    {
+      "name": "Yaniv Raz",
+      "seats": {
+        "outbound": "29A",
+        "return": "30A"
+      }
+    },
+    {
+      "name": "Maya Raz",
+      "seats": {
+        "outbound": "29C",
+        "return": "30C"
+      }
+    }
   ]
 }
