@@ -360,8 +360,17 @@
       "dayNumber": "Day 12",
       "destinationId": "tortuguero",
       "title": "Day 12 — Tortuguero National Park",
-      "theme": "Full day for a morning canoe canal tour and wildlife spotting.",
-      "note": "💡 Nothing booked yet — plan is a morning canoe canal tour."
+      "theme": "Early-morning canoe tour through the Tortuguero National Park canals.",
+      "items": [
+        {
+          "type": "venue",
+          "icon": "🛶",
+          "name": "Tortuguero National Park — Canoe Tour",
+          "mapLink": "https://www.google.com/maps/search/?api=1&query=Tortuguero+National+Park+Costa+Rica",
+          "time": "6:00 AM",
+          "desc": "A remote Caribbean rainforest park reachable only by boat or plane, laced with quiet canals and lagoons. Paddling at dawn is the best time to spot monkeys, sloths, caimans, river otters, toucans and herons — and its beach is one of the most important nesting sites for green sea turtles."
+        }
+      ]
     },
     {
       "date": "2026-10-01",
